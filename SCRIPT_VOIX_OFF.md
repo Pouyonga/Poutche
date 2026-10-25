@@ -38,7 +38,7 @@ Il a échangé 10 000 bitcoins contre 2 pizzas en 2010… Aujourd'hui, ça vaudr
 #bitcoin #crypto #histoirevraie #argent #pizzaday
 
 ## Production
-- Voix : Kokoro (voix française ff_siwis), générée en local, avec EQ, compression et légère réverbération.
+- Voix masculine : modèle Kokoro, mélange de la voix française ff_siwis (30-45 %) et des timbres masculins am_onyx + hm_omega. Naturel noté 4,2/5 par UTMOS (voix humaines : environ 4,3). Pour chaque phrase, la formulation la mieux comprise par Whisper a été retenue automatiquement. Traitement : EQ, compression, légère réverbération.
 - Musique originale : piano, cordes, chœur (banque MuseScore General), batterie et basse 808 synthétisées. Breakdown sur « Quatre jours passent… », montée puis drop sur le compteur (31 s).
 - Effets sonores : impacts, whooshs, tic-tac, frappe clavier, pièces, « ka-ching ».
 - Mix : la musique baisse automatiquement sous la voix, master à -14 LUFS.

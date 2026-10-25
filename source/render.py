@@ -24,7 +24,7 @@ ORANGE = (247, 147, 26)
 GREEN = (52, 211, 120)
 CARD = (24, 24, 32)
 
-VOICE_JSON = sys.argv[1] + ".json" if False else "voix2.json"
+VOICE_JSON = sys.argv[1] + ".json" if False else "voix3.json"
 BTC_PRICE_EUR = 55000            # cours approx. octobre 2026 (à ajuster)
 TODAY_VALUE = 10000 * BTC_PRICE_EUR
 

@@ -3,7 +3,31 @@ import numpy as np, soundfile as sf, json, sys, re
 from kokoro_onnx import Kokoro
 T=sys.argv[1]
 k=Kokoro(T+'/kokoro-v1.0.onnx',T+'/voices-v1.0.bin')
-VOICE=k.get_voice_style('ff_siwis')
+sys.path.insert(0,T); from asr import asr
+_sw,_on,_om=k.get_voice_style('ff_siwis'),k.get_voice_style('am_onyx'),k.get_voice_style('hm_omega')
+def blend(w): return w*_sw+(1-w)/2*(_on+_om)
+WEIGHTS=[.3,.35,.4,.45]
+ALT={  # alternative spellings tried when a line is not understood clearly
+ "Cet homme a payé deux pizzas... des centaines de millions d'euros.":["Cet homme a payé... deux pizzas. Des centaines de millions d'euros.","Cet homme, a payé deux pizzas... des centaines de millions d'euros."],
+ "Lasslo envoie ses dix mille bitcoins.":["Lasslo, envoie ses dix mille bitcoins.","Lasslo envoie alors ses dix mille bitcoins."],
+ "Mai, deux mille dix.":["Mai deux mille dix.","Mai... deux-mille-dix."],
+ "Puis un étudiant de dix-neuf ans accepte.":["Puis, un étudiant de dix neuf ans, accepte.","Puis un étudiant, de dix-neuf ans, accepte."],
+ "Et les pizzas arrivent.":["Et les pizzas... arrivent.","Et, les pizzas arrivent."],
+ "Et toi... tu les aurais gardés ?":["Et toi, tu les aurais gardés ?","Et toi ? Tu les aurais gardés ?"],
+ "Lasslo Hanièts, un programmeur de Floride,":["Lasslo Hanièts... un programmeur de Floride,"],
+}
+def nrm(s):
+    s=s.lower().replace("-"," ").replace("'"," ").replace("10 000","10000").replace("\xa0","")
+    return _re.sub(r"[^\w\s]"," ",s).split()
+def wer(r,h):
+    r,h=nrm(r),nrm(h)
+    if 'programmeur' in r: r=r[r.index('programmeur'):]; h=h[h.index('programmeur'):] if 'programmeur' in h else h
+    if r and r[0]=='laszlo': r=r[1:]; h=h[2:] if len(h)>2 else h
+    d=np.zeros((len(r)+1,len(h)+1),int); d[:,0]=range(len(r)+1); d[0,:]=range(len(h)+1)
+    for i in range(1,len(r)+1):
+        for j in range(1,len(h)+1): d[i,j]=min(d[i-1,j]+1,d[i,j-1]+1,d[i-1,j-1]+(r[i-1]!=h[j-1]))
+    return d[-1,-1]/max(1,len(r))
+import re as _re
 SR=24000
 # (slot_start, slot_end, spoken text, caption text)
 LINES=[
@@ -26,17 +50,27 @@ LINES=[
  (36.10, 38.05, "Et toi... tu les aurais gardés ?", "Et toi, tu les aurais gardés ?"),
  (38.10, 39.95, "Abonne-toi, pour plus d'histoires d'argent.", "Abonne-toi pour plus d'histoires d'argent."),
 ]
-def gen(txt,sp):
-    a,sr=k.create(txt,voice=VOICE,speed=sp,lang='fr-fr'); assert sr==SR; return a.astype(np.float32)
+def gen(txt,sp,w=.3):
+    a,sr=k.create(txt,voice=blend(w),speed=sp,lang='fr-fr'); assert sr==SR; return a.astype(np.float32)
 def trim(x):
     idx=np.where(np.abs(x)>0.012)[0]; return x[max(0,idx[0]-240):idx[-1]+1200]
 out=np.zeros(int(40*SR),np.float32); res=[]; prev=0.0
 for i,(a,b,txt,cap) in enumerate(LINES):
-    st=max(a, prev+0.1)
-    lim=(LINES[i+1][0]+0.15) if i+1<len(LINES) else 39.85
+    st=max(a-0.2, prev+0.08)
+    lim=(LINES[i+1][0]+0.1) if i+1<len(LINES) else 39.85
+    best=None
+    for tv in [txt]+ALT.get(txt,[]):
+        for w in WEIGHTS:
+            xx=trim(gen(tv,1.05,w))
+            hyp=asr(np.concatenate([np.zeros(SR//4),xx,np.zeros(SR//2)]),SR); e=wer(cap,hyp)
+            if best is None or e<best[0]-1e-9: best=(e,tv,w,hyp)
+            if e==0: break
+        if best[0]==0: break
+    e,txt,W_,hyp=best
+    print(f"   choose w={W_} wer={e:.2f} '{txt}' -> {hyp}")
     sp=1.05
     for _ in range(6):
-        x=trim(gen(txt,sp)); d=len(x)/SR
+        x=trim(gen(txt,sp,W_)); d=len(x)/SR
         if st+d<=lim or sp>=1.28: break
         sp=min(1.28, sp*d/(lim-st))
     j=int(st*SR); out[j:j+len(x)]+=x[:len(out)-j]
