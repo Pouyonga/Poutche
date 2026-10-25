@@ -24,6 +24,7 @@ ORANGE = (247, 147, 26)
 GREEN = (52, 211, 120)
 CARD = (24, 24, 32)
 
+VOICE_JSON = sys.argv[1] + ".json" if False else "voix2.json"
 BTC_PRICE_EUR = 55000            # cours approx. octobre 2026 (à ajuster)
 TODAY_VALUE = 10000 * BTC_PRICE_EUR
 
@@ -66,13 +67,19 @@ def background(t):
 # ---------- drawing primitives on RGBA layers ----------
 def layer(): return Image.new("RGBA", (W, H), (0, 0, 0, 0))
 
-def text(base, s, font, cx, cy, fill, alpha=1.0, scale=1.0, anchor="mm", glow=None, dy=0):
+def text(base, s, font, cx, cy, fill, alpha=1.0, scale=1.0, anchor="mm", glow=None, dy=0, stroke=0, shadow=False):
     if alpha <= 0.01: return
     bbox = font.getbbox(s)
     tw, th = bbox[2] - bbox[0] + 40, bbox[3] - bbox[1] + 40
     tl = Image.new("RGBA", (tw + 60, th + 60), (0, 0, 0, 0))
     d = ImageDraw.Draw(tl)
-    d.text((tl.width/2, tl.height/2), s, font=font, fill=fill + (255,), anchor="mm")
+    if shadow:
+        sh = Image.new("RGBA", tl.size, (0, 0, 0, 0))
+        ImageDraw.Draw(sh).text((tl.width/2 + 4, tl.height/2 + 8), s, font=font, fill=(0, 0, 0, 200), anchor="mm", stroke_width=stroke, stroke_fill=(0, 0, 0, 200))
+        tl = Image.alpha_composite(tl, sh.filter(ImageFilter.GaussianBlur(8)))
+        d = ImageDraw.Draw(tl)
+    d.text((tl.width/2, tl.height/2), s, font=font, fill=fill + (255,), anchor="mm",
+           stroke_width=stroke, stroke_fill=(8, 8, 10, 255) if stroke else None)
     if glow:
         g = tl.copy().filter(ImageFilter.GaussianBlur(glow))
         tl = Image.alpha_composite(g, tl)
@@ -133,32 +140,26 @@ def pizza(base, cx, cy, r, alpha=1.0, rot=0.0, bite=0):
 def fmt(n):
     return f"{int(n):,}".replace(",", " ")
 
-# ---------- subtitles (synced to the voice-over script) ----------
-SUBS = [
-    (0.12, 1.25, 'Cet homme a payé'),
-    (1.25, 1.95, 'deux pizzas…'),
-    (1.95, 3.3, "des centaines de millions d'euros."),
-    (3.35, 4.43, 'Mai 2010.'),
-    (4.48, 6.64, 'Le bitcoin vient à peine de naître.'),
-    (6.69, 9.13, "Il ne vaut presque rien : moins d'un centime."),
-    (9.18, 11.75, "Et personne ne s'en sert pour acheter quoi que ce soit."),
-    (11.8, 14.32, 'Laszlo Hanyecz, un programmeur de Floride,'),
-    (14.37, 15.98, 'poste un message sur un forum :'),
-    (16.03, 18.68, '« 10 000 bitcoins pour deux pizzas. »'),
-    (19.0, 20.55, 'Quatre jours passent…'),
-    (20.6, 23.02, 'Puis un étudiant de 19 ans accepte.'),
-    (23.07, 25.22, 'Laszlo envoie ses 10 000 bitcoins.'),
-    (25.27, 26.6, 'Les pizzas arrivent.'),
-    (26.65, 28.39, 'Le tout premier achat en bitcoin.'),
-    (28.44, 30.71, "À l'époque, ça valait 41 dollars."),
-    (30.76, 31.53, "Aujourd'hui ?"),
-    (31.58, 34.41, "Ces bitcoins vaudraient plus d'un demi-milliard d'euros."),
-    (35.8, 37.75, 'Et toi, tu les aurais gardés ?'),
-    (37.8, 39.95, "Abonne-toi pour plus d'histoires d'argent."),
-]
-# hook: show one line at a time
-
-SUB_Y = 1380
+# ---------- word-by-word captions (timed from the voice-over) ----------
+import json, re as _re
+VO = json.load(open(VOICE_JSON))
+CHUNKS = []   # (start, end, [(ws, we, word)])
+for li, L in enumerate(VO):
+    words = L["words"]; cur = []
+    groups = []
+    for w in words:
+        cur.append(w)
+        if len(cur) >= 3 or _re.search(r"[,:….?!]$", w[2]):
+            groups.append(cur); cur = []
+    if cur:
+        if groups and len(cur) == 1 and len(groups[-1]) < 4 and not _re.search(r"[,:….?!]$", groups[-1][-1][2]): groups[-1] += cur
+        else: groups.append(cur)
+    nxt_line = VO[li+1]["start"] if li + 1 < len(VO) else 40.0
+    for gi, g in enumerate(groups):
+        st = g[0][0] - 0.06
+        en = groups[gi+1][0][0] - 0.06 if gi + 1 < len(groups) else min(nxt_line - 0.06, g[-1][1] + 0.45)
+        CHUNKS.append((st, en, g))
+CAP_Y = 1420
 def wrap(s, font, maxw):
     words, lines, cur = s.split(), [], ""
     for w_ in words:
@@ -166,24 +167,27 @@ def wrap(s, font, maxw):
         if font.getlength(t) > maxw and cur: lines.append(cur); cur = w_
         else: cur = t
     lines.append(cur); return lines
-
 def draw_subs(base, t):
-    f = XB(54)
-    for a, b, s in SUBS:
-        if a <= t < b:
-            p = eo(prog(t, a, a + .15))
-            lines = wrap(s, f, 860)
-            lh = 72
-            total = lh * len(lines)
-            pad = 26
-            maxw = max(f.getlength(l) for l in lines)
-            box = (W/2 - maxw/2 - pad, SUB_Y - total/2 - pad*.6, W/2 + maxw/2 + pad, SUB_Y + total/2 + pad*.6)
-            rrect(base, tuple(int(v) for v in box), 22, (0, 0, 0), alpha=.55*p)
-            for i, l in enumerate(lines):
-                y = SUB_Y - total/2 + lh*(i + .5) + (1-p)*14
-                # highlight key words in orange
-                col = ORANGE if any(k in l for k in ("bitcoin", "pizzas", "millions", "milliard", "10 000", "41")) else WHITE
-                text(base, l, f, W/2, y, col if i == 0 and len(lines) == 1 else WHITE, alpha=p)
+    for st, en, g in CHUNKS:
+        if st <= t < en:
+            size = 76
+            f = BLACK(size)
+            words = [w[2].replace("\xa0", " ").upper() for w in g]
+            sp = f.getlength(" ") * 1.9
+            ws = [f.getlength(w) for w in words]
+            tot = sum(ws) + sp * (len(ws) - 1)
+            while tot > 940 and size > 50:
+                size -= 4; f = BLACK(size); sp = f.getlength(" ") * 1.9; ws = [f.getlength(w) for w in words]; tot = sum(ws) + sp*(len(ws)-1)
+            p = eo(prog(t, st, st + .12))
+            x = W/2 - tot/2
+            for (w0, w1, _), w, wl in zip(g, words, ws):
+                active = w0 - .06 <= t < (w1 if w1 > w0 else w0 + .2)
+                said = t >= w0 - .06
+                sc = 1.0
+                if active: sc = 1.0 + .14 * (1 - eo(prog(t, w0 - .06, w0 + .12))) + .04
+                col = ORANGE if active else (WHITE if said else (200, 200, 205))
+                text(base, w, f, x + wl/2, CAP_Y + (1-p)*18, col, alpha=p, scale=sc*(.9 + .1*p), stroke=7, shadow=True)
+                x += wl + sp
             return
 
 # ---------- scenes ----------
@@ -326,7 +330,7 @@ def scene_climax(img, t):
     if t > 30.4:
         q = eo(prog(t, 30.4, 30.8))
         text(img, "AUJOURD'HUI", BOLD(52), W/2, 640, ORANGE, alpha=a*q)
-        r = prog(t, 30.7, 34.6)
+        r = prog(t, 31.0, 34.6)
         # exponential-feeling count up
         val = 41 * (TODAY_VALUE/41) ** eo(r) if r > 0 else 41
         done = r >= 1
@@ -345,7 +349,7 @@ def scene_climax(img, t):
         for i in range(7):
             ph = i*1.3
             x = 120 + (i*137) % 840; y = 1250 - ((t-30.4)*90 + i*60) % 1100
-            coin(img, x, y, 26, alpha=a*q*.18, rot=t*2 + ph)
+            pass
 
 def scene_outro(img, t):
     if t < 35.9: return
@@ -374,12 +378,60 @@ def topbar(img, t):
     d.rectangle((0, 0, int(W*t/DUR), 8), fill=ORANGE + (200,))
     img.alpha_composite(L)
 
+# ---------- camera & finishing ----------
+IMPACTS = [(0.0, 1.0), (1.85, .8), (31.0, 1.0), (34.6, .9)]           # shake + flash
+CUTS = [3.0, 12.05, 19.3, 20.9, 28.1, 36.0]                            # push-in transitions
+def camera(t):
+    z = 1.0; dx = dy = 0.0
+    z += .035 * math.sin(t * .35)  * .5 + .02                          # slow breathing
+    for c in CUTS:                                                     # punch-in after cuts
+        q = prog(t, c - .05, c + .35)
+        if 0 < q < 1: z += .09 * (1 - eo(q))
+    for ti, k in IMPACTS:
+        q = t - ti
+        if 0 <= q < .45:
+            amp = 22 * k * (1 - q / .45) ** 2
+            dx += amp * math.sin(q * 90); dy += amp * math.cos(q * 73)
+            z += .06 * k * (1 - eo(q / .45))
+    if 31.0 <= t < 34.6: z += .05 * prog(t, 31.0, 34.6)               # slow push on counter
+    return z, dx, dy
+def flash(t):
+    a = 0.0
+    for ti, k in IMPACTS:
+        q = t - ti
+        if ti > 0 and 0 <= q < .2: a = max(a, .2 * k * (1 - q / .2))
+    for c in CUTS:
+        q = t - c
+        if 0 <= q < .12: a = max(a, .12 * (1 - q / .12))
+    return a
+GRAIN = [(np.random.RandomState(i).randn(H // 2, W // 2) * 6).astype(np.int16) for i in range(6)]
+PART = np.random.RandomState(11).rand(36, 4)
+def particles(img, t):
+    L = layer(); d = ImageDraw.Draw(L)
+    for i, (px, py, sp, sz) in enumerate(PART):
+        x = (px * W + math.sin(t * .5 + i) * 30) % W
+        y = (py * H - t * (20 + 50 * sp)) % H
+        r = 1.5 + sz * 3.5
+        d.ellipse((x - r, y - r, x + r, y + r), fill=(255, 200, 140, int(40 + 50 * sz)))
+    img.alpha_composite(L.filter(ImageFilter.GaussianBlur(1.2)))
+
 def frame(t):
     img = background(t)
+    particles(img, t)
     scene_hook(img, t); scene_context(img, t); scene_story(img, t)
     scene_climax(img, t); scene_outro(img, t)
+    z, dx, dy = camera(t)
+    if abs(z - 1) > .001 or dx or dy:
+        cw, ch = W / z, H / z
+        x0 = (W - cw) / 2 - dx / z; y0 = (H - ch) / 2 - dy / z
+        img = img.transform((W, H), Image.EXTENT, (x0, y0, x0 + cw, y0 + ch), Image.BILINEAR)
     draw_subs(img, t); topbar(img, t)
-    return img.convert("RGB")
+    arr = np.asarray(img.convert("RGB")).astype(np.int16)
+    fa = flash(t)
+    if fa > 0: arr = arr + ((255 - arr) * fa).astype(np.int16)
+    g = GRAIN[int(t * FPS) % len(GRAIN)]
+    arr += np.repeat(np.repeat(g, 2, 0), 2, 1)[:, :, None]
+    return Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8))
 
 if PREVIEW:
     for s in PREVIEW:

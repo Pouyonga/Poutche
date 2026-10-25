@@ -1,8 +1,8 @@
 # Laszlo et les pizzas à 10 000 bitcoins : TikTok de 40 s
 
-Vidéo : `laszlo_pizza_tiktok.mp4` (1080x1920, 40 s, **avec voix off**)
-Voix off seule : `laszlo_pizza_voix_off.mp3` (voix française Piper « tom », générée en local)
-Sous-titres : `laszlo_pizza_soustitres.srt` (importables dans CapCut)
+Vidéo : `laszlo_pizza_tiktok.mp4` (1080x1920, 40 s) : voix off, musique, effets sonores, sous-titres mot par mot.
+Pistes séparées pour CapCut : `laszlo_pizza_voix_off.mp3` (voix traitée) et `laszlo_pizza_musique.mp3` (musique seule).
+Sous-titres : `laszlo_pizza_soustitres.srt`
 
 ## Voix off (ton conteur, rythmé)
 
@@ -11,7 +11,7 @@ Cet homme a payé deux pizzas… des centaines de millions d'euros.
 
 **[3-12 s, CONTEXTE]**
 Mai 2010. Le bitcoin vient à peine de naître.
-Il ne vaut presque rien : moins d'un centime.
+Il ne vaut presque rien. Même pas un centime.
 Et personne ne s'en sert pour acheter quoi que ce soit.
 
 **[12-28 s, L'HISTOIRE]**
@@ -20,7 +20,7 @@ Laszlo Hanyecz, un programmeur de Floride, poste un message sur un forum :
 Quatre jours passent…
 Puis un étudiant de 19 ans accepte.
 Laszlo envoie ses 10 000 bitcoins.
-Les pizzas arrivent.
+Et les pizzas arrivent.
 Le tout premier achat en bitcoin.
 
 **[28-36 s, LA CHUTE]**
@@ -37,10 +37,12 @@ Il a échangé 10 000 bitcoins contre 2 pizzas en 2010… Aujourd'hui, ça vaudr
 
 #bitcoin #crypto #histoirevraie #argent #pizzaday
 
-## Conseils CapCut
-- La voix est déjà dans la vidéo. Pour une autre voix : « Texte en parole » dans CapCut, puis coupe le son d'origine.
-- Les sous-titres sont déjà incrustés dans la vidéo, donc **n'importe pas le .srt** sauf si tu veux les remplacer par le style CapCut.
-- Musique : un son tendu et discret à ~15 % de volume, avec une montée sur le compteur (31-35 s).
+## Production
+- Voix : Kokoro (voix française ff_siwis), générée en local, avec EQ, compression et légère réverbération.
+- Musique originale : piano, cordes, chœur (banque MuseScore General), batterie et basse 808 synthétisées. Breakdown sur « Quatre jours passent… », montée puis drop sur le compteur (31 s).
+- Effets sonores : impacts, whooshs, tic-tac, frappe clavier, pièces, « ka-ching ».
+- Mix : la musique baisse automatiquement sous la voix, master à -14 LUFS.
+- Régénérer : `voice.py` (voix), puis `music.py` (musique et mix), puis `render.py` (image).
 
 ## Sources / chiffres
 - Message original : forum bitcointalk.org, 18 mai 2010. Pizzas livrées le 22 mai 2010 (le « Bitcoin Pizza Day »). Jeremy Sturdivant, 19 ans, a commandé chez Papa John's.
