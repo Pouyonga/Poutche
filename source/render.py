@@ -135,29 +135,28 @@ def fmt(n):
 
 # ---------- subtitles (synced to the voice-over script) ----------
 SUBS = [
-    (0.15, 1.35, "Cet homme a payé"),
-    (1.35, 2.95, "deux pizzas…"),
-    (1.95, 2.95, "des centaines de millions d'euros."),
-    (3.10, 4.60, "Mai 2010."),
-    (4.60, 6.60, "Le bitcoin vient à peine de naître."),
-    (6.60, 9.10, "Il ne vaut presque rien : moins d'un centime."),
-    (9.10, 11.90, "Et personne ne s'en sert pour acheter quoi que ce soit."),
-    (12.10, 14.60, "Laszlo Hanyecz, un programmeur de Floride,"),
-    (14.60, 16.20, "poste un message sur un forum :"),
-    (16.20, 19.20, "« 10 000 bitcoins pour deux pizzas. »"),
-    (19.30, 20.90, "Quatre jours passent…"),
-    (20.90, 22.90, "Puis un étudiant de 19 ans accepte."),
-    (22.90, 25.00, "Laszlo envoie ses 10 000 bitcoins."),
-    (25.00, 26.40, "Les pizzas arrivent."),
-    (26.40, 28.00, "Le tout premier achat en bitcoin."),
-    (28.10, 30.40, "À l'époque, ça valait 41 dollars."),
-    (30.40, 31.80, "Aujourd'hui ?"),
-    (31.80, 35.90, "Ces bitcoins vaudraient plus d'un demi-milliard d'euros."),
-    (36.10, 38.10, "Et toi, tu les aurais gardés ?"),
-    (38.10, 39.95, "Abonne-toi pour plus d'histoires d'argent."),
+    (0.12, 1.25, 'Cet homme a payé'),
+    (1.25, 1.95, 'deux pizzas…'),
+    (1.95, 3.3, "des centaines de millions d'euros."),
+    (3.35, 4.43, 'Mai 2010.'),
+    (4.48, 6.64, 'Le bitcoin vient à peine de naître.'),
+    (6.69, 9.13, "Il ne vaut presque rien : moins d'un centime."),
+    (9.18, 11.75, "Et personne ne s'en sert pour acheter quoi que ce soit."),
+    (11.8, 14.32, 'Laszlo Hanyecz, un programmeur de Floride,'),
+    (14.37, 15.98, 'poste un message sur un forum :'),
+    (16.03, 18.68, '« 10 000 bitcoins pour deux pizzas. »'),
+    (19.0, 20.55, 'Quatre jours passent…'),
+    (20.6, 23.02, 'Puis un étudiant de 19 ans accepte.'),
+    (23.07, 25.22, 'Laszlo envoie ses 10 000 bitcoins.'),
+    (25.27, 26.6, 'Les pizzas arrivent.'),
+    (26.65, 28.39, 'Le tout premier achat en bitcoin.'),
+    (28.44, 30.71, "À l'époque, ça valait 41 dollars."),
+    (30.76, 31.53, "Aujourd'hui ?"),
+    (31.58, 34.41, "Ces bitcoins vaudraient plus d'un demi-milliard d'euros."),
+    (35.8, 37.75, 'Et toi, tu les aurais gardés ?'),
+    (37.8, 39.95, "Abonne-toi pour plus d'histoires d'argent."),
 ]
 # hook: show one line at a time
-SUBS[1] = (1.35, 1.95, "deux pizzas…")
 
 SUB_Y = 1380
 def wrap(s, font, maxw):

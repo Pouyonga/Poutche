@@ -1,6 +1,7 @@
 # Laszlo et les pizzas à 10 000 bitcoins : TikTok de 40 s
 
-Vidéo : `laszlo_pizza_tiktok.mp4` (1080x1920, 40 s, sans voix)
+Vidéo : `laszlo_pizza_tiktok.mp4` (1080x1920, 40 s, **avec voix off**)
+Voix off seule : `laszlo_pizza_voix_off.mp3` (voix française Piper « tom », générée en local)
 Sous-titres : `laszlo_pizza_soustitres.srt` (importables dans CapCut)
 
 ## Voix off (ton conteur, rythmé)
@@ -37,10 +38,10 @@ Il a échangé 10 000 bitcoins contre 2 pizzas en 2010… Aujourd'hui, ça vaudr
 #bitcoin #crypto #histoirevraie #argent #pizzaday
 
 ## Conseils CapCut
-- Voix : « Texte en parole », voix masculine FR « narrateur », vitesse 1.0-1.1x.
-- Colle chaque bloc ci-dessus au timecode indiqué. Les sous-titres sont déjà incrustés dans la vidéo, donc **n'importe pas le .srt** sauf si tu veux les remplacer par le style CapCut.
+- La voix est déjà dans la vidéo. Pour une autre voix : « Texte en parole » dans CapCut, puis coupe le son d'origine.
+- Les sous-titres sont déjà incrustés dans la vidéo, donc **n'importe pas le .srt** sauf si tu veux les remplacer par le style CapCut.
 - Musique : un son tendu et discret à ~15 % de volume, avec une montée sur le compteur (31-35 s).
 
 ## Sources / chiffres
 - Message original : forum bitcointalk.org, 18 mai 2010. Pizzas livrées le 22 mai 2010 (le « Bitcoin Pizza Day »). Jeremy Sturdivant, 19 ans, a commandé chez Papa John's.
-- Valeur de 2010 : ~41 $. Valeur actuelle calculée avec ~55 000 €/BTC (10 000 × 55 000 € = 550 M€). Vérifie le cours avant de publier : pour changer, modifie `BTC_PRICE_EUR` dans `source/render.py` et relance `python3 source/render.py sortie.mp4`.
+- Valeur de 2010 : ~41 $. Valeur actuelle calculée avec ~55 000 €/BTC (10 000 × 55 000 € = 550 M€). Vérifie le cours avant de publier : pour changer, modifie `BTC_PRICE_EUR` dans `source/render.py` et relance `python3 source/render.py sortie.mp4`. Voix : `python3 source/voice.py <dossier_modèle> write voix.wav` (modèle : release sherpa-onnx `vits-piper-fr_FR-tom-medium`, moteur `pip install piper-tts`).
