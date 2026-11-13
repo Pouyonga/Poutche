@@ -1,9 +1,9 @@
 # Vidéo 1 : Black Friday, qui gagne VRAIMENT de l'argent ?
 
 **Chaîne :** L'Envers du Business (nom de travail)
-**Format :** vidéo longue 16:9, environ 7 à 8 min (≈ 1 070 mots lus à 145 mots/min)
+**Format :** vidéo longue 16:9, 6 min 31 s de voix off (voix Nicolas, Eleven v4)
 **Date de sortie conseillée :** lundi 23 ou mardi 24 novembre 2026 (Black Friday le vendredi 27 novembre 2026)
-**Voix :** une seule voix masculine posée, ton « enquête », débit 150 mots/min
+**Voix :** Nicolas (ElevenLabs, id aQROLel5sQbj1vuIVi6B), modèle eleven_v4
 
 Les indications **[VISUEL]** décrivent l'animation à produire. Seul le texte normal est lu par la voix off.
 
