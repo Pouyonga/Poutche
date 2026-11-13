@@ -1,0 +1,647 @@
+1
+00:00:00,300 --> 00:00:03,640
+Ce casque est affiché à -35 % pour le Black Friday.
+
+2
+00:00:03,660 --> 00:00:04,810
+Une affaire, non ?
+
+3
+00:00:04,830 --> 00:00:07,160
+Sauf qu'en juillet, il coûtait déjà moins cher que
+
+4
+00:00:07,180 --> 00:00:08,630
+ce prix « en promo ».
+
+5
+00:00:08,780 --> 00:00:10,920
+Entre les deux, son prix a grimpé…
+
+6
+00:00:10,940 --> 00:00:12,590
+juste avant la remise.
+
+7
+00:00:12,620 --> 00:00:15,200
+Selon la Commission européenne, près d'une promotion
+
+8
+00:00:15,220 --> 00:00:17,520
+sur trois ne respecte pas les règles sur l'affichage
+
+9
+00:00:17,540 --> 00:00:18,280
+des prix.
+
+10
+00:00:18,300 --> 00:00:21,030
+Alors aujourd'hui, on va répondre à une seule question
+
+11
+00:00:21,180 --> 00:00:22,600
+: pendant le Black Friday…
+
+12
+00:00:22,620 --> 00:00:24,330
+qui gagne vraiment de l'argent ?
+
+13
+00:00:24,350 --> 00:00:26,310
+Et surtout : est-ce que c'est toi ?
+
+14
+00:00:27,010 --> 00:00:29,660
+Pour comprendre, il faut remonter à Philadelphie,
+
+15
+00:00:29,680 --> 00:00:31,760
+au début des années 1960.
+
+16
+00:00:31,780 --> 00:00:34,270
+Chaque année, le lendemain de Thanksgiving,
+
+17
+00:00:34,290 --> 00:00:36,870
+les foules envahissent le centre-ville pour commencer
+
+18
+00:00:36,890 --> 00:00:38,510
+leurs achats de Noël.
+
+19
+00:00:38,530 --> 00:00:41,310
+Embouteillages monstres, trottoirs bondés,
+
+20
+00:00:41,330 --> 00:00:42,750
+vols à l'étalage.
+
+21
+00:00:42,770 --> 00:00:45,110
+Pour les policiers de la ville, c'est le pire jour
+
+22
+00:00:45,130 --> 00:00:48,030
+de l'année. Aucun congé possible.
+
+23
+00:00:48,050 --> 00:00:49,920
+Alors ils lui donnent un surnom :
+
+24
+00:00:49,940 --> 00:00:51,310
+« Black Friday ».
+
+25
+00:00:51,330 --> 00:00:53,070
+Le vendredi noir.
+
+26
+00:00:53,090 --> 00:00:55,280
+Les commerçants détestent ce nom.
+
+27
+00:00:55,300 --> 00:00:58,240
+Ils essaient même de le remplacer par « Big Friday
+
+28
+00:00:58,260 --> 00:00:59,980
+». Échec total.
+
+29
+00:01:00,000 --> 00:01:02,300
+Plus tard, on invente une autre explication,
+
+30
+00:01:02,320 --> 00:01:03,550
+plus flatteuse :
+
+31
+00:01:03,570 --> 00:01:06,590
+ce serait le jour où les magasins passent enfin « dans
+
+32
+00:01:06,610 --> 00:01:09,510
+le noir », c'est-à-dire en bénéfice.
+
+33
+00:01:09,530 --> 00:01:13,020
+Joli. Mais cette version est apparue bien après.
+
+34
+00:01:13,040 --> 00:01:16,140
+Et puis, avec Internet, le Black Friday a traversé
+
+35
+00:01:16,160 --> 00:01:17,310
+l'Atlantique.
+
+36
+00:01:17,330 --> 00:01:20,670
+Aujourd'hui, en France, la grande majorité des consommateurs
+
+37
+00:01:20,690 --> 00:01:22,780
+déclarent y participer.
+
+38
+00:01:23,390 --> 00:01:25,880
+Combien d'argent circule pendant ces quelques jours
+
+39
+00:01:26,510 --> 00:01:26,570
+?
+
+40
+00:01:26,590 --> 00:01:30,410
+Aux États-Unis, en 2025, les achats en ligne ont atteint
+
+41
+00:01:30,430 --> 00:01:33,090
+11,8 milliards de dollars…
+
+42
+00:01:33,110 --> 00:01:35,050
+rien que le jour du Black Friday.
+
+43
+00:01:35,070 --> 00:01:37,190
+Un record, selon Adobe.
+
+44
+00:01:37,210 --> 00:01:39,590
+Et le lundi suivant, le « Cyber Monday »,
+
+45
+00:01:39,610 --> 00:01:41,010
+a fait encore mieux :
+
+46
+00:01:41,030 --> 00:01:43,090
+plus de 14 milliards.
+
+47
+00:01:43,110 --> 00:01:47,290
+Sur les cinq jours, on dépasse 44 milliards de dollars.
+
+48
+00:01:47,310 --> 00:01:50,440
+En France, le commerce en ligne a frôlé les 200 milliards
+
+49
+00:01:50,460 --> 00:01:52,490
+d'euros sur l'année 2025.
+
+50
+00:01:52,510 --> 00:01:55,210
+Et la fin novembre est l'un des moments les plus intenses
+
+51
+00:01:55,230 --> 00:01:58,730
+de l'année. Mais voici le détail intéressant.
+
+52
+00:01:58,750 --> 00:02:01,290
+Pendant le Black Friday 2025 en France,
+
+53
+00:02:01,310 --> 00:02:04,610
+selon Criteo, le nombre de commandes en ligne n'a augmenté
+
+54
+00:02:04,630 --> 00:02:06,730
+que d'environ 3 %.
+
+55
+00:02:06,750 --> 00:02:10,170
+Le chiffre d'affaires, lui, de près de 6 %.
+
+56
+00:02:10,190 --> 00:02:11,290
+Autrement dit :
+
+57
+00:02:11,310 --> 00:02:13,050
+on n'achète pas beaucoup plus…
+
+58
+00:02:13,070 --> 00:02:15,480
+on dépense plus par commande.
+
+59
+00:02:15,500 --> 00:02:19,240
+Et ça, c'est exactement ce que les marques cherchent.
+
+60
+00:02:19,860 --> 00:02:21,760
+Premier gagnant, évidemment :
+
+61
+00:02:21,780 --> 00:02:25,120
+le magasin. Mais pas forcément comme tu l'imagines.
+
+62
+00:02:25,140 --> 00:02:27,200
+Il utilise trois techniques.
+
+63
+00:02:27,220 --> 00:02:29,680
+La première, c'est le produit d'appel.
+
+64
+00:02:29,700 --> 00:02:32,720
+Le magasin met en avant un produit vendu avec une marge
+
+65
+00:02:32,740 --> 00:02:35,380
+minuscule, parfois même à perte.
+
+66
+00:02:35,400 --> 00:02:38,500
+Une télé, une console, un smartphone.
+
+67
+00:02:38,520 --> 00:02:41,300
+Son but n'est pas de gagner de l'argent sur ce produit.
+
+68
+00:02:41,320 --> 00:02:43,700
+Son but, c'est de te faire venir.
+
+69
+00:02:43,720 --> 00:02:45,220
+Parce qu'une fois dans le magasin,
+
+70
+00:02:45,240 --> 00:02:47,620
+ou sur le site, tu ajoutes le câble,
+
+71
+00:02:47,640 --> 00:02:50,160
+le support mural, l'extension de garantie…
+
+72
+00:02:50,180 --> 00:02:53,940
+Et sur ces petits produits, la marge est énorme.
+
+73
+00:02:53,960 --> 00:02:56,530
+La deuxième technique, c'est le prix barré.
+
+74
+00:02:56,550 --> 00:02:58,440
+En Europe, la règle est claire :
+
+75
+00:02:58,460 --> 00:03:00,880
+le prix de référence d'une promotion doit être le prix
+
+76
+00:03:00,900 --> 00:03:04,000
+le plus bas pratiqué dans les 30 jours précédents.
+
+77
+00:03:04,020 --> 00:03:06,850
+Sauf que certains vendeurs jouent avec les règles.
+
+78
+00:03:06,870 --> 00:03:10,080
+L'UFC-Que Choisir a relevé, en 2025,
+
+79
+00:03:10,100 --> 00:03:13,600
+un casque audio vendu 259 euros en juillet…
+
+80
+00:03:13,620 --> 00:03:16,880
+puis remonté à presque 400 euros en septembre…
+
+81
+00:03:16,900 --> 00:03:19,920
+pour afficher ensuite une énorme réduction.
+
+82
+00:03:19,940 --> 00:03:21,220
+Techniquement légal.
+
+83
+00:03:21,240 --> 00:03:23,320
+Mais franchement trompeur.
+
+84
+00:03:23,340 --> 00:03:25,420
+D'autres utilisent un « prix conseillé »
+
+85
+00:03:25,440 --> 00:03:28,160
+ou un « prix de comparaison », qui n'a parfois jamais
+
+86
+00:03:28,180 --> 00:03:30,000
+été pratiqué nulle part.
+
+87
+00:03:30,020 --> 00:03:32,120
+La réduction a l'air énorme…
+
+88
+00:03:32,140 --> 00:03:34,850
+mais tu ne paies presque pas moins cher qu'avant.
+
+89
+00:03:34,870 --> 00:03:37,280
+La troisième technique, c'est l'urgence.
+
+90
+00:03:37,300 --> 00:03:38,380
+Compte à rebours.
+
+91
+00:03:38,400 --> 00:03:39,780
+« Plus que 3 en stock.
+
+92
+00:03:39,800 --> 00:03:41,950
+» « 40 personnes regardent ce produit.
+
+93
+00:03:41,970 --> 00:03:44,400
+» Tout est fait pour t'empêcher de faire la seule chose
+
+94
+00:03:44,420 --> 00:03:45,680
+qui te protège :
+
+95
+00:03:45,700 --> 00:03:49,840
+comparer. Notre cerveau a horreur de rater une occasion.
+
+96
+00:03:49,860 --> 00:03:51,090
+Les marques le savent.
+
+97
+00:03:51,110 --> 00:03:53,470
+Et elles l'exploitent à fond.
+
+98
+00:03:54,060 --> 00:03:56,420
+Deuxième gagnant, plus discret :
+
+99
+00:03:56,440 --> 00:03:58,920
+ceux qui te permettent de payer plus tard.
+
+100
+00:03:58,940 --> 00:04:01,910
+Le fameux « paiement en 3 ou 4 fois ».
+
+101
+00:04:01,930 --> 00:04:05,600
+Aux États-Unis, le seul Cyber Monday 2025 a généré
+
+102
+00:04:05,620 --> 00:04:07,960
+plus d'un milliard de dollars d'achats payés de cette
+
+103
+00:04:07,980 --> 00:04:09,750
+façon, selon Adobe.
+
+104
+00:04:09,770 --> 00:04:11,360
+Pourquoi ça marche aussi bien ?
+
+105
+00:04:11,380 --> 00:04:14,700
+Parce que « 4 × 100 euros », ça fait moins peur que
+
+106
+00:04:14,720 --> 00:04:16,040
+« 400 euros ».
+
+107
+00:04:16,060 --> 00:04:17,380
+Le produit est le même.
+
+108
+00:04:17,400 --> 00:04:20,280
+Mais la douleur de payer est découpée en morceaux.
+
+109
+00:04:20,300 --> 00:04:21,960
+Et les sociétés de paiement, elles,
+
+110
+00:04:21,980 --> 00:04:23,120
+sont rémunérées :
+
+111
+00:04:23,140 --> 00:04:25,880
+par le commerçant, qui sait que tu achèteras plus…
+
+112
+00:04:25,900 --> 00:04:28,870
+et parfois par toi, si tu paies en retard.
+
+113
+00:04:29,470 --> 00:04:30,810
+Troisième gagnant :
+
+114
+00:04:30,830 --> 00:04:32,250
+les plateformes.
+
+115
+00:04:32,270 --> 00:04:34,970
+Les grandes places de marché, les moteurs de recherche,
+
+116
+00:04:34,990 --> 00:04:36,490
+les réseaux sociaux.
+
+117
+00:04:36,510 --> 00:04:38,730
+Pendant le Black Friday, toutes les marques veulent
+
+118
+00:04:38,750 --> 00:04:40,570
+être visibles en même temps.
+
+119
+00:04:40,590 --> 00:04:43,910
+Résultat : le prix de la publicité en ligne grimpe.
+
+120
+00:04:43,930 --> 00:04:46,330
+Et cet argent-là, il va directement dans les poches
+
+121
+00:04:46,350 --> 00:04:49,610
+des plateformes, que tu achètes quelque chose ou non.
+
+122
+00:04:49,630 --> 00:04:51,850
+Et il y a un deuxième trésor :
+
+123
+00:04:51,870 --> 00:04:53,130
+tes données.
+
+124
+00:04:53,150 --> 00:04:56,490
+Chaque clic, chaque recherche, chaque panier abandonné
+
+125
+00:04:56,510 --> 00:04:58,200
+aide à mieux te cibler…
+
+126
+00:04:58,220 --> 00:05:01,800
+pour Noël, pour les soldes, pour l'année suivante.
+
+127
+00:05:02,400 --> 00:05:05,690
+Alors, est-ce que le consommateur est forcément perdant
+
+128
+00:05:05,710 --> 00:05:06,860
+? Pas forcément.
+
+129
+00:05:06,880 --> 00:05:09,100
+Il existe de vraies bonnes affaires pendant le Black
+
+130
+00:05:09,120 --> 00:05:10,140
+Friday.
+
+131
+00:05:10,160 --> 00:05:13,260
+Mais elles profitent à ceux qui suivent trois règles.
+
+132
+00:05:13,280 --> 00:05:15,660
+Un : décider avant.
+
+133
+00:05:15,680 --> 00:05:18,270
+Faire une liste de ce dont tu as vraiment besoin,
+
+134
+00:05:18,290 --> 00:05:20,820
+et ne rien acheter qui n'y figure pas.
+
+135
+00:05:20,840 --> 00:05:23,660
+Deux : vérifier l'historique des prix.
+
+136
+00:05:23,680 --> 00:05:26,060
+Des outils gratuits montrent l'évolution du prix d'un
+
+137
+00:05:26,080 --> 00:05:27,780
+produit sur plusieurs mois.
+
+138
+00:05:27,800 --> 00:05:30,100
+Si le prix a grimpé juste avant la promo,
+
+139
+00:05:30,120 --> 00:05:31,420
+passe ton chemin.
+
+140
+00:05:31,440 --> 00:05:34,220
+Trois : ignorer le compte à rebours.
+
+141
+00:05:34,240 --> 00:05:36,170
+Si l'offre est vraiment bonne aujourd'hui,
+
+142
+00:05:36,190 --> 00:05:37,950
+elle le sera encore dans 10 minutes,
+
+143
+00:05:37,970 --> 00:05:41,070
+le temps de comparer sur deux ou trois autres sites.
+
+144
+00:05:41,090 --> 00:05:44,140
+D'ailleurs, une étude Joko sur le Black Friday 2025
+
+145
+00:05:44,160 --> 00:05:46,810
+en France montre que beaucoup de gens n'achètent pas
+
+146
+00:05:46,840 --> 00:05:49,850
+plus : ils avancent simplement leurs achats de Noël.
+
+147
+00:05:49,870 --> 00:05:52,300
+Et si c'est ton cas, avec de vrais bons prix…
+
+148
+00:05:52,320 --> 00:05:55,450
+alors là, oui, tu fais partie des gagnants.
+
+149
+00:05:56,070 --> 00:05:59,250
+Le Black Friday n'est pas une fête du consommateur.
+
+150
+00:05:59,270 --> 00:06:01,610
+C'est une immense opération commerciale,
+
+151
+00:06:01,630 --> 00:06:03,570
+pensée pour te faire dépenser plus,
+
+152
+00:06:03,590 --> 00:06:05,890
+plus vite, en réfléchissant moins.
+
+153
+00:06:05,910 --> 00:06:08,690
+Le magasin gagne grâce au panier complet.
+
+154
+00:06:08,710 --> 00:06:11,490
+Le crédit gagne grâce au paiement découpé.
+
+155
+00:06:11,510 --> 00:06:14,820
+Les plateformes gagnent grâce à la pub et à tes données.
+
+156
+00:06:14,840 --> 00:06:17,730
+Et toi, tu gagnes seulement si tu connais leurs règles
+
+157
+00:06:17,750 --> 00:06:20,370
+du jeu. Maintenant, tu les connais.
+
+158
+00:06:20,390 --> 00:06:22,570
+Si tu veux comprendre comment les grandes entreprises
+
+159
+00:06:22,590 --> 00:06:25,090
+gagnent vraiment leur argent, abonne-toi.
+
+160
+00:06:25,110 --> 00:06:27,930
+Dans la prochaine vidéo, on décortique comment McDonald's
+
+161
+00:06:27,950 --> 00:06:29,090
+gagne son argent…
+
+162
+00:06:29,110 --> 00:06:32,240
+et tu vas voir que ce n'est pas avec les burgers.
