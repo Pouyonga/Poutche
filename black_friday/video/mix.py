@@ -25,7 +25,7 @@ mus = cross(cross(A, B), A)[:N]
 mus = np.pad(mus, ((0, N - len(mus)), (0, 0)))
 # enveloppe de la voix -> atténuation de la musique (« ducking »)
 env = np.abs(vbuf).max(1)
-k = int(.25 * SR); env = np.convolve(env, np.ones(k) / k, "same")
+k = int(.25 * SR); c = np.concatenate([[0], np.cumsum(env, dtype=np.float64)]); idx = np.arange(N); lo = np.clip(idx - k // 2, 0, N); hi = np.clip(idx + k // 2, 0, N); env = (c[hi] - c[lo]) / np.maximum(hi - lo, 1)
 speak = np.clip(env / 0.02, 0, 1)
 duck = db(-13) * speak + db(-4) * (1 - speak)
 # lissage de l'atténuation (attaque / relâchement)
