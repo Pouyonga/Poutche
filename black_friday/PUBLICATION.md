@@ -51,4 +51,4 @@ black friday, black friday 2026, fausses promotions, black friday arnaque, écon
 - **Écran de fin** (11 dernières secondes, à partir de 06:33) : placer « Vidéo la plus récente » sur le cadre gauche, « Meilleure pour le spectateur » sur le cadre du milieu, et « S'abonner » sur le logo à droite. Les cadres gris de la vidéo sont prévus pour ça.
 - **Fiches** : aucune pour l'instant.
 - **Commentaire épinglé** : « Tu as déjà acheté une promo qui n'en était pas une ? Raconte en commentaire 👇 »
-- **Publication** : lundi 23 novembre 2026 à 18 h (programmer à l'avance)
+- **Publication** : mardi 17 novembre 2026 à 18 h, heure de Paris (programmer à l'avance). Ça laisse 10 jours à YouTube pour faire découvrir la vidéo avant le Black Friday du 27 novembre.
