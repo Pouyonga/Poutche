@@ -1,7 +1,7 @@
 # Vidéo 2 : Comment McDonald's gagne VRAIMENT son argent (pas avec les burgers)
 
 **Chaîne :** L'Envers du Business
-**Format :** vidéo longue 16:9, objectif 8 à 9 min (≈ 1 400 mots lus)
+**Format :** vidéo longue 16:9, environ 7 min 30 (≈ 1 230 mots lus)
 **Date de sortie :** vendredi 20 novembre 2026 à 18 h
 **Playlist :** Comment ils gagnent leur argent
 **Voix :** Nicolas (ElevenLabs, eleven_v4)
@@ -92,6 +92,13 @@ Plus cher.
 On lui attribue une phrase devenue célèbre :
 « Nous ne sommes pas vraiment dans la restauration. Nous sommes dans l'immobilier. »
 
+[VISUEL : un chèque géant « 2,7 millions de dollars » qui passe des mains de Kroc à celles des deux frères. Tampon « 1961 ».]
+
+Grâce à cet argent des loyers, Kroc devient assez puissant pour racheter les frères McDonald.
+En 1961, il leur rachète tout, la marque et le concept, pour deux virgule sept millions de dollars.
+Les deux frères repartent avec un chèque.
+Kroc, lui, repart avec un empire… construit sur des terrains.
+
 ---
 
 ## 4. Comment ça marche aujourd'hui (3:30 – 5:00)
@@ -165,6 +172,33 @@ Pendant que les burgers sont mangés en quelques minutes, l'immobilier, lui, res
 
 Et troisième avantage : le contrôle.
 Quand on est le propriétaire des murs, on a un moyen de pression énorme sur celui qui les occupe.
+Un franchisé qui ne respecte pas les règles de la marque ne risque pas seulement de perdre l'enseigne.
+Il risque aussi de perdre son emplacement.
+
+[VISUEL : résultat d'exploitation 12,4 Md$ sur 26,9 Md$ de revenus. Une jauge qui monte presque à la moitié.]
+
+Le résultat est impressionnant.
+En 2025, McDonald's a dégagé plus de douze milliards de dollars de résultat d'exploitation, pour vingt-six virgule neuf milliards de revenus.
+Presque la moitié de ce qu'il encaisse se transforme en bénéfice d'exploitation.
+Pour une entreprise de restauration, c'est énorme.
+
+---
+
+## 6 bis. Alors, les burgers ne servent à rien ? (nuance)
+
+[VISUEL : une balance. D'un côté un burger, de l'autre l'immeuble. Elles s'équilibrent.]
+
+Attention quand même : ça ne veut pas dire que les burgers ne comptent pas.
+Au contraire.
+Le loyer et la redevance sont calculés en pourcentage des ventes.
+Donc si les restaurants vendent moins, McDonald's encaisse moins.
+
+[VISUEL : flèche circulaire : « plus de clients » → « plus de ventes » → « plus de loyers » → « plus de pub » → retour.]
+
+C'est pour ça que McDonald's dépense autant d'énergie en publicité, en nouveaux menus, en applis et en promotions.
+Plus les franchisés vendent, plus le propriétaire gagne.
+Le burger n'est pas le produit qui rapporte le plus.
+C'est le moteur qui fait tourner toute la machine immobilière.
 
 ---
 
@@ -196,6 +230,16 @@ Le vrai business, c'est le terrain sous le restaurant.
 [VISUEL : texte final « Dans le business, ce qu'on vend n'est pas toujours ce qui rapporte. »]
 
 Et c'est une leçon qu'on retrouve partout dans le business : ce qu'une entreprise vend n'est pas toujours ce qui la fait gagner de l'argent.
+
+[VISUEL : trois cartes qui se retournent : imprimante → cartouches, rasoir → lames, console → jeux et abonnements.]
+
+L'imprimante pas chère… et les cartouches hors de prix.
+Le rasoir offert… et les lames qu'on rachète toute sa vie.
+La console vendue presque sans marge… et les jeux et abonnements derrière.
+À chaque fois, le produit que tu vois n'est que la porte d'entrée.
+Le vrai business est ailleurs.
+La prochaine fois que tu achètes quelque chose, pose-toi la question :
+sur quoi cette entreprise gagne-t-elle vraiment son argent ?
 
 [VISUEL : écran de fin, vignette Black Friday + bouton S'abonner.]
 
