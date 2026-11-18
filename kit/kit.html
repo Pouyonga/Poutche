@@ -229,17 +229,17 @@ function card(v, idx, stats) {
 
   // 2 miniatures
   if (f.thumbs && f.thumbs.length) {
-    s = el("div", "step"); s.append(el("span", "label", "2 · Les miniatures (« Tester et comparer »)"));
+    s = el("div", "step"); s.append(el("span", "label", f.thumbs.length > 1 ? "2 · Les miniatures (« Tester et comparer »)" : "2 · La miniature"));
     const g = el("div", "thumbs"); const msg = el("div", "msg");
     const test = v.thumbTest || [];
     f.thumbs.forEach(t => {
       const meta = test.find(x => x.letter === t.letter) || {};
       const box = el("div", "th" + (meta.winner ? " win" : ""));
       const im = el("img"); im.src = t.preview; im.alt = "Miniature " + t.letter; im.loading = "lazy"; box.append(im);
-      const cap = el("div", "cap"); cap.append(el("b", null, t.letter + " · " + (meta.lever || "").toLowerCase()), document.createTextNode(meta.text ? "« " + meta.text + " »" : ""));
+      const cap = el("div", "cap"); cap.append(el("b", null, (f.thumbs.length > 1 ? t.letter + " · " : "") + (meta.lever || t.lever || "").toLowerCase()), document.createTextNode(meta.text || t.text ? "« " + (meta.text || t.text) + " »" : ""));
       if (meta.winner) cap.append(el("span", "winb", "Gagnante"));
       if (meta.share != null) cap.append(document.createTextNode(" · " + nf.format(meta.share) + " %"));
-      box.append(cap, fileBtn("Télécharger la miniature " + t.letter, t, msg)); g.append(box);
+      box.append(cap, fileBtn(f.thumbs.length > 1 ? "Télécharger la miniature " + t.letter : "Télécharger la miniature", t, msg)); g.append(box);
     });
     s.append(g, msg);
     if (v.thumbTestHow) s.append(el("p", "hint", v.thumbTestHow));
