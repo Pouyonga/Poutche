@@ -260,7 +260,7 @@ def s_flows(img, t):
         strike_line(img, 480, 640, lerp(480, 1450, eo(prog(t, 175.13, .6))), 640, 1, SUN, int(w_))
         label(img, 960, 570, "LOYER", t, 175.13, 80, INK, SUN, -3)
         label(img, 960, 720, "le terrain ou le bâtiment est à McDonald's", t, 177.69, 34, INK, PAPER, 0)
-        for k in range(7):
+        for k in range(7 if t >= 175.6 else 0):
             ph = ((t - 175.1) * .6 + k / 7) % 1
             T(img, lerp(500, 1440, ph), 640, "€", "anton", 64, INK, "mm", 1)
     if t >= 180.71: label(img, 960, 900, "% des ventes + un MINIMUM garanti", t, 182.17, 56, PAPER, INK, 0)
@@ -361,6 +361,9 @@ def s_control(img, t):
 
 def s_opinc(img, t):
     label(img, 960, 120, "LE RÉSULTAT EN 2025", t, 295.7, 70, PAPER, INK)
+    if t < 300.2:
+        pop_word(img, 960, 520, "IMPRESSIONNANT", t, 296.69, 150, INK, PAPER, -4)
+        confetti(img, t, 296.8, 50, (100, 0, W - 100, 0), 7)
     pop_word(img, 560, 380, fmt(12.4 * eo(prog(t, 300.65, 1.0)), 1) + " Md$", t, 300.29, 140, INK, MINT, -3)
     label(img, 560, 520, "de résultat d'exploitation", t, 302.09, 42, PAPER, INK)
     pop_word(img, 1360, 380, "26,9 Md$", t, 303.89, 140, INK, PAPER, 3)
@@ -503,8 +506,8 @@ def s_outro(img, t):
     if t >= 429.36:
         if _bf is None: _bf = Image.open(os.path.join(MCDIR, "../../black_friday/miniature_c_le_piege.png")).convert("RGBA").resize((480, 270), Image.LANCZOS)
         L = Image.new("RGBA", (500, 290), INK + (255,)); L.paste(_bf, (10, 10))
-        put(img, L, 960, 840, 1, pin(t, 429.36, .4), -2)
-        label(img, 960, 700, "tu as raté la vidéo Black Friday ?", t, 429.36, 40, INK, PAPER, 0)
+        put(img, L, 960, 870, 1, pin(t, 429.36, .4), -2)
+        label(img, 960, 680, "tu as raté la vidéo Black Friday ?", t, 429.36, 40, INK, PAPER, 0)
     return 1.0, 0, 0, 0
 
 def s_end(img, t):

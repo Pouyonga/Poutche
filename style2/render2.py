@@ -23,7 +23,7 @@ def _work(args):
     mod, k, f0, f1, out = args
     m = __import__(mod); frame = make_frame(m.TL)
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
-                          "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", out], stdin=subprocess.PIPE)
+                          "-c:v", "libx264", "-preset", "medium", "-crf", "23", "-pix_fmt", "yuv420p", out], stdin=subprocess.PIPE)
     for n in range(f0, f1):
         p.stdin.write(frame(n / FPS).tobytes())
         if (n - f0) % 900 == 0: print(f"[{k}] {n - f0}/{f1 - f0}", flush=True)
