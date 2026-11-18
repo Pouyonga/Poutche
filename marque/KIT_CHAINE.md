@@ -34,17 +34,19 @@ Sur L'Envers du Business, on décortique en quelques minutes comment les entrepr
 ## Mots-clés de la chaîne
 économie, business, argent, entreprises, marques, finance expliquée, économie expliquée, consommation, marketing, prix, comment ça marche
 
-## Les 10 prochaines vidéos (dans l'ordre conseillé)
-1. Comment McDonald's gagne vraiment son argent (annoncée à la fin de la vidéo 1)
-2. Pourquoi Lidl est moins cher que tout le monde
-3. Combien gagne vraiment un youtubeur français ?
-4. Pourquoi les cinémas vendent le pop-corn si cher
-5. Pourquoi les imprimantes coûtent si cher à l'usage
-6. Comment Shein a bouleversé la mode en 5 ans
-7. Pourquoi l'iPhone coûte 1 200 € (et combien il coûte à fabriquer)
-8. Le business secret des stations-service
-9. Comment les compagnies low-cost vendent des billets à 10 €
-10. Comment Netflix gagne (et perd) des milliards
+## Calendrier (sujets à fort potentiel de clics uniquement)
+| Date | Vidéo |
+|---|---|
+| Mar. 17 nov. | V01 · Black Friday : qui gagne VRAIMENT de l'argent ? (en ligne) |
+| Ven. 20 nov. | V03 · GTA 6 : comment un jeu vidéo rapporte des MILLIARDS en quelques jours |
+| Mar. 24 nov. | V02 · Comment McDonald's gagne VRAIMENT son argent (décalée) |
+| Ven. 27 nov. | Shein (jour du Black Friday) |
+| Mar. 1er déc. | Pourquoi Lidl est moins cher que tout le monde |
+| Ven. 4 déc. | Combien gagne vraiment un youtubeur français ? |
+| Mar. 8 déc. | Pourquoi l'iPhone coûte 1 200 € |
+| Ven. 11 déc. | Comment les compagnies low-cost vendent des billets à 10 € |
+
+Sujets écartés (potentiel de clics trop faible) : imprimantes, stations-service, Netflix, pop-corn.
 
 ## Mise en place (15 min sur YouTube Studio)
 1. **Personnalisation → Profil** : nom, identifiant, description, photo de profil, bannière.
