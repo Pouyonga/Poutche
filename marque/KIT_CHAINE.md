@@ -38,8 +38,8 @@ Sur L'Envers du Business, on décortique en quelques minutes comment les entrepr
 | Date | Vidéo |
 |---|---|
 | Mar. 17 nov. | V01 · Black Friday : qui gagne VRAIMENT de l'argent ? (en ligne) |
-| Ven. 20 nov. | V03 · GTA 6 : comment un jeu vidéo rapporte des MILLIARDS en quelques jours |
-| Mar. 24 nov. | V02 · Comment McDonald's gagne VRAIMENT son argent (décalée) |
+| Ven. 20 nov. | V02 · GTA 6 : comment un jeu vidéo rapporte des MILLIARDS en quelques jours |
+| Mar. 24 nov. | V03 · Comment McDonald's gagne VRAIMENT son argent (décalée) |
 | Ven. 27 nov. | Shein (jour du Black Friday) |
 | Mar. 1er déc. | Pourquoi Lidl est moins cher que tout le monde |
 | Ven. 4 déc. | Combien gagne vraiment un youtubeur français ? |
