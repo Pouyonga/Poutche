@@ -269,9 +269,18 @@ function card(v, idx, stats) {
     s.append(h, fileBtn("Télécharger les sous-titres", f.srt, msg), msg); c.append(s);
   }
 
-  // 6 stats
+  // 6 shorts
+  if (f.shorts && f.shorts.length) {
+    s = el("div", "step"); s.append(el("span", "label", "6 · Les Shorts"));
+    const msg = el("div", "msg");
+    f.shorts.forEach(sh => { const r = el("div", "copyrow"); const info = el("div"); info.append(el("b", null, sh.title), document.createTextNode(" · " + sh.when)); r.append(info, fileBtn("Télécharger", sh, msg)); s.append(r); });
+    s.append(msg, el("p", "hint", "Dans YouTube Studio, mets la vidéo complète en « vidéo associée » de chaque Short."));
+    c.append(s);
+  }
+
+  // 7 stats
   const st = el("div", "stats");
-  st.append(el("span", "label", "6 · Mes stats"));
+  st.append(el("span", "label", (f.shorts && f.shorts.length ? "7" : "6") + " · Mes stats"));
   st.append(el("p", "hint", "Relève les chiffres dans YouTube Studio (Statistiques de la vidéo) à J+1, J+3, J+7 et J+28. Remplis le formulaire, ou envoie une capture à Claude dans la conversation : il les ajoute avec son analyse."));
   const form = el("form", "form"); form.noValidate = true;
   const fld = (id, lab, type = "text", ph = "") => { const w = el("div", "f"); const l = el("label", null, lab); const i = el("input"); i.type = type === "num" ? "text" : type; if (type === "num") i.inputMode = "decimal"; i.id = v.id + "-" + id; l.htmlFor = i.id; i.placeholder = ph; w.append(l, i); form.append(w); return i; };
