@@ -1,0 +1,354 @@
+<title>Kit L'Envers du Business</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Kit de publication : en-tête de chaîne, calendrier, objectifs, puis une fiche par vidéo numérotée comme une procédure (1 vidéo, 2 miniatures, 3 titres, 4 textes, 5 sous-titres, 6 stats). Couleurs de la chaîne. */
+:root {
+  --bg: #0b0b10; --panel: #15151d; --panel-2: #1d1d28; --line: #2b2b39; --field: #0f0f15;
+  --fg: #f4f4f7; --muted: #a0a0b4; --dim: #6c6c82;
+  --yellow: #ffd400; --red: #ff3b30; --green: #34d378; --blue: #409cff;
+  --display: "Anton", "Impact", "Arial Narrow Bold", sans-serif;
+  --text: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 15px/1.55 var(--text); margin: 0; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-block: 36px 72px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 32px; }
+h1, h2, h3 { margin: 0; font-weight: 400; text-wrap: balance; }
+.num { font-variant-numeric: tabular-nums; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--yellow); outline-offset: 2px; }
+
+.top { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.top img { width: 64px; height: 64px; border-radius: 50%; flex: none; }
+.top h1 { font: 400 clamp(36px, 7vw, 58px)/1 var(--display); }
+.top h1 span { color: var(--yellow); }
+.lead { color: var(--muted); max-width: 62ch; margin: 10px 0 0; font-size: 17px; }
+
+.label { font: 700 12px/1 var(--text); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+h2.sec { font: 400 28px/1 var(--display); letter-spacing: .01em; }
+.sub { color: var(--muted); font-size: 14px; margin: 6px 0 0; }
+
+/* calendrier */
+.cal { display: grid; gap: 8px; }
+.cal a { display: flex; align-items: center; gap: 14px; padding: 14px 18px; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; color: var(--fg); text-decoration: none; flex-wrap: wrap; }
+.cal a:hover { border-color: var(--yellow); }
+.ep { font: 800 13px var(--text); background: var(--yellow); color: #111; padding: 3px 10px; border-radius: 99px; flex: none; }
+.cal .t { font-weight: 600; flex: 1 1 260px; min-width: 0; }
+.cal .d { color: var(--muted); font-size: 14px; }
+
+/* objectifs */
+.goals { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px; }
+.goal { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; display: grid; gap: 8px; min-width: 0; }
+.goal .v { font: 400 28px/1 var(--display); }
+.goal .v small { font: 500 14px var(--text); color: var(--muted); margin-left: 4px; }
+.bar { height: 7px; border-radius: 99px; background: var(--panel-2); overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--yellow); width: 0; }
+.goal p { margin: 0; color: var(--dim); font-size: 13px; }
+
+/* fiche vidéo */
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 22px; padding: clamp(18px, 3vw, 30px); display: grid; gap: 26px; scroll-margin-top: 16px; }
+.kick { font: 800 13px var(--text); letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
+.card h2.vt { font: 400 clamp(28px, 4.4vw, 42px)/1.08 var(--display); margin-top: 6px; }
+.pills { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.pill { padding: 8px 16px; border-radius: 99px; font-weight: 700; font-size: 14px; border: 1px solid var(--line); background: var(--panel-2); }
+.pill.when { background: var(--yellow); color: #111; border-color: var(--yellow); }
+.pill .count { font: 500 12px var(--mono); margin-left: 8px; opacity: .8; }
+.why { color: var(--muted); font-size: 14px; margin: 10px 0 0; max-width: 75ch; }
+.step { display: grid; gap: 12px; }
+.step > .label { color: var(--fg); }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 99px; border: 1px solid var(--line); background: var(--panel-2); font-weight: 800; cursor: pointer; width: fit-content; }
+.btn.main { background: var(--yellow); color: #111; border-color: var(--yellow); font-size: 16px; padding: 15px 26px; }
+.btn:hover { border-color: var(--yellow); }
+.btn[disabled] { opacity: .6; cursor: progress; }
+.progress { height: 8px; border-radius: 99px; background: var(--panel-2); overflow: hidden; }
+.progress i { display: block; height: 100%; width: 0; background: var(--yellow); transition: width .2s; }
+.msg { font-size: 13px; color: var(--muted); min-height: 1.2em; }
+.msg.ok { color: var(--green); } .msg.err { color: var(--red); }
+
+.thumbs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.th { display: grid; gap: 10px; min-width: 0; }
+.th img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); display: block; }
+.th .cap { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+.th .cap b { color: var(--fg); }
+.th.win img { border-color: var(--green); box-shadow: 0 0 0 2px var(--green); }
+.winb { color: var(--green); font-weight: 800; }
+
+.copyrow { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.copy { background: var(--blue); color: #061527; border: 0; border-radius: 99px; padding: 7px 16px; font-weight: 800; font-size: 13px; cursor: pointer; flex: none; }
+.copy.ok { background: var(--green); }
+.box { background: var(--field); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 15px; }
+.box.scroll { max-height: 320px; overflow-y: auto; }
+.titles { display: grid; gap: 8px; }
+.titles .row { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: center; background: var(--field); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px 10px 16px; }
+.titles .n { font: 800 13px var(--text); color: var(--yellow); }
+.titles .tx { font-weight: 600; min-width: 0; overflow-wrap: anywhere; }
+.hint { color: var(--muted); font-size: 14px; margin: 0; }
+.hint b { color: var(--fg); }
+.check { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.check li { display: grid; grid-template-columns: 18px 1fr; gap: 10px; font-size: 14px; }
+.check li::before { content: ""; width: 14px; height: 14px; margin-top: 4px; border-radius: 4px; border: 2px solid var(--dim); }
+.check li.done { color: var(--muted); } .check li.done::before { background: var(--green); border-color: var(--green); }
+
+/* stats */
+.stats { border-top: 1px dashed var(--line); padding-top: 22px; display: grid; gap: 16px; }
+.form { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.f { display: grid; gap: 6px; min-width: 0; }
+.f label { font-weight: 700; font-size: 13px; color: var(--muted); }
+.f input, .f select, .f textarea { background: var(--field); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; width: 100%; }
+.f textarea { min-height: 80px; resize: vertical; }
+.f.wide { grid-column: 1 / -1; }
+.actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+table { border-collapse: collapse; width: 100%; min-width: 820px; font-size: 14px; }
+th, td { padding: 9px 12px; text-align: right; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+th { font: 700 11px var(--text); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); background: var(--panel-2); }
+tr:last-child td { border-bottom: 0; }
+td.good { color: var(--green); } td.warn { color: var(--yellow); } td.bad { color: var(--red); }
+.note { background: var(--field); border: 1px solid var(--line); border-left: 3px solid var(--yellow); border-radius: 10px; padding: 12px 14px; display: grid; gap: 4px; font-size: 14px; }
+.note b { font: 400 17px var(--display); color: var(--yellow); }
+.note p { margin: 0; white-space: pre-wrap; }
+.empty { color: var(--muted); font-size: 14px; }
+.loading { color: var(--dim); text-align: center; padding: 30px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="top">
+      <img src="fichiers/logo.jpg" alt="Logo de la chaîne">
+      <h1>Kit <span>L'Envers du Business</span></h1>
+    </div>
+    <p class="lead">Une fiche par vidéo : les fichiers à télécharger, les textes à copier pour YouTube, le jour, l'heure et la playlist. La plus récente est en haut.</p>
+  </header>
+
+  <section style="display:grid;gap:14px" aria-labelledby="cal-t">
+    <div><h2 class="sec" id="cal-t">Calendrier</h2><p class="sub">Une vidéo le mardi et le vendredi à 18 h, heure de Paris. Tu peux tout programmer d'avance dans YouTube Studio.</p></div>
+    <div class="cal" id="cal"><div class="loading">Chargement…</div></div>
+  </section>
+
+  <section style="display:grid;gap:14px" aria-labelledby="g-t">
+    <div><h2 class="sec" id="g-t">Objectifs de monétisation</h2><p class="sub" id="g-upd">Palier 1 : 500 abonnés et 3 000 h. Pub : 1 000 abonnés et 4 000 h avant le 1er février 2027, 8 000 h ensuite.</p></div>
+    <div class="goals">
+      <div class="goal"><span class="label">Abonnés</span><span class="v num" id="g-subs">0<small>/ 500</small></span><div class="bar"><i id="b-subs"></i></div></div>
+      <div class="goal"><span class="label">Heures de visionnage</span><span class="v num" id="g-hours">0<small>/ 3 000 h</small></span><div class="bar"><i id="b-hours"></i></div></div>
+      <div class="goal"><span class="label">Vues totales</span><span class="v num" id="g-views">0</span><div class="bar"><i id="b-views" style="background:var(--blue)"></i></div><p>Repère : 100 000 vues</p></div>
+    </div>
+  </section>
+
+  <div id="videos" style="display:grid;gap:26px"><div class="loading">Chargement des fiches…</div></div>
+</div>
+
+<script>
+const $ = (s, r = document) => r.querySelector(s);
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+const nf = new Intl.NumberFormat("fr-FR");
+const TZ = "Europe/Paris";
+const fmtN = v => v == null || v === "" ? "—" : nf.format(v);
+const fmtP = v => v == null || v === "" ? "—" : nf.format(v) + " %";
+const fmtDur = s => { if (s == null || s === "") return "—"; s = Math.round(s); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); };
+const day = iso => new Date(iso).toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long", timeZone: TZ });
+const dayLong = iso => { const d = new Date(iso); const s = d.toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: TZ }); const h = d.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit", timeZone: TZ }).replace(":", "h"); return s[0].toUpperCase() + s.slice(1) + " · " + h; };
+const shortDay = iso => { try { return new Date(iso).toLocaleDateString("fr-FR", { day: "numeric", month: "short", timeZone: TZ }); } catch { return "—"; } };
+const parseNum = v => { if (v == null) return null; v = String(v).trim().replace(/\s/g, "").replace(",", "."); if (!v) return null; const n = Number(v); return isFinite(n) ? n : null; };
+const parseDur = v => { v = String(v || "").trim(); if (!v) return null; if (v.includes(":")) { const [m, s] = v.split(":"); return (+m || 0) * 60 + (+s || 0); } return parseNum(v); };
+
+let downloads = null, db = null;
+const dlReady = claude.use("downloads").then(d => (downloads = d));
+
+function copyBtn(get) {
+  const b = el("button", "copy", "Copier"); b.type = "button";
+  b.onclick = async () => {
+    try { await navigator.clipboard.writeText(get()); b.textContent = "Copié"; b.classList.add("ok"); }
+    catch { const box = b.parentElement.nextElementSibling; if (box) { const r = document.createRange(); r.selectNodeContents(box); const s = getSelection(); s.removeAllRanges(); s.addRange(r); } b.textContent = "Texte sélectionné"; }
+    setTimeout(() => { b.textContent = "Copier"; b.classList.remove("ok"); }, 1800);
+  };
+  return b;
+}
+
+async function save(name, data, msg) {
+  await dlReady;
+  if (!downloads) { msg.className = "msg err"; msg.textContent = "Le téléchargement n'est pas disponible dans cette vue. Ouvre le kit sur claude.ai."; return; }
+  try { await downloads.save({ filename: name, data }); msg.className = "msg ok"; msg.textContent = "Fichier enregistré : " + name; }
+  catch (e) { msg.className = "msg " + (e && e.code === "declined" ? "" : "err"); msg.textContent = e && e.code === "declined" ? "Téléchargement annulé." : "Le téléchargement a échoué. Réessaie dans un instant."; }
+}
+
+async function fetchParts(parts, bar, msg) {
+  let total = 0, got = 0; const sizes = parts.map(p => p.size || 0); total = sizes.reduce((a, b) => a + b, 0);
+  const chunks = [];
+  for (const p of parts) {
+    const r = await fetch(p.path); if (!r.ok || !r.body) throw new Error("fetch");
+    const reader = r.body.getReader();
+    for (;;) { const { done, value } = await reader.read(); if (done) break; chunks.push(value); got += value.length; if (total) bar.style.width = Math.min(100, got / total * 100) + "%"; msg.textContent = "Préparation : " + Math.round(got / 1e6) + " / " + Math.round(total / 1e6) + " Mo"; }
+  }
+  return new Blob(chunks, { type: "video/mp4" });
+}
+
+function fileBtn(label, file, msg, main) {
+  const b = el("button", "btn" + (main ? " main" : ""), label); b.type = "button";
+  b.onclick = async () => {
+    b.disabled = true; msg.className = "msg"; msg.textContent = "Préparation…";
+    try { const r = await fetch(file.path); if (!r.ok) throw 0; await save(file.name, await r.blob(), msg); }
+    catch { msg.className = "msg err"; msg.textContent = "Fichier introuvable pour le moment."; }
+    b.disabled = false;
+  };
+  return b;
+}
+
+function ctrTone(v) { return v == null ? "" : v >= 6 ? "good" : v >= 4 ? "warn" : "bad"; }
+function retTone(v) { return v == null ? "" : v >= 45 ? "good" : v >= 35 ? "warn" : "bad"; }
+
+const countdowns = [];
+function tick() { const now = Date.now(); countdowns.forEach(({ n, at }) => { const d = at - now; if (d <= 0) { n.textContent = "· en ligne"; return; } const j = Math.floor(d / 864e5), h = Math.floor(d % 864e5 / 36e5); n.textContent = `· dans ${j} j ${h} h`; }); }
+setInterval(tick, 60000);
+
+function card(v, idx, stats) {
+  const c = el("article", "card"); c.id = v.id;
+  const head = el("div");
+  head.append(el("div", "kick", (v.code || "V" + String(idx + 1).padStart(2, "0")) + " · " + (v.durationSec ? fmtDur(v.durationSec).replace(":", " min ") : "")));
+  head.append(el("h2", "vt", v.title || ""));
+  const pills = el("div", "pills");
+  if (v.publishAt) { const p = el("span", "pill when", dayLong(v.publishAt)); if (v.status !== "publiée") { const cd = el("span", "count"); p.append(cd); countdowns.push({ n: cd, at: new Date(v.publishAt).getTime() }); } pills.append(p); }
+  if (v.playlist) { const p = el("span", "pill"); p.append("Playlist : ", el("b", null, v.playlist)); pills.append(p); }
+  if (v.status) pills.append(el("span", "pill", v.status === "publiée" ? "Publiée" : v.status === "programmée" ? "À programmer" : v.status));
+  head.append(pills);
+  if (v.publishWhy) head.append(el("p", "why", v.publishWhy));
+  c.append(head);
+
+  const f = v.kitFiles || {};
+  // 1 vidéo
+  let s = el("div", "step"); s.append(el("span", "label", "1 · La vidéo"));
+  if (f.video) {
+    const msg = el("div", "msg"), prog = el("div", "progress"), bar = el("i"); prog.append(bar);
+    const b = el("button", "btn main", `Télécharger la vidéo (${Math.round(f.video.size / 1e6)} Mo)`); b.type = "button";
+    b.onclick = async () => { b.disabled = true; msg.className = "msg"; try { const blob = await fetchParts(f.video.parts, bar, msg); await save(f.video.name, blob, msg); } catch { msg.className = "msg err"; msg.textContent = "Impossible de récupérer la vidéo pour le moment."; } b.disabled = false; };
+    s.append(b, prog, msg);
+  } else s.append(el("p", "hint", "La vidéo arrive bientôt."));
+  c.append(s);
+
+  // 2 miniatures
+  if (f.thumbs && f.thumbs.length) {
+    s = el("div", "step"); s.append(el("span", "label", f.thumbs.length > 1 ? "2 · Les miniatures (« Tester et comparer »)" : "2 · La miniature"));
+    const g = el("div", "thumbs"); const msg = el("div", "msg");
+    const test = v.thumbTest || [];
+    f.thumbs.forEach(t => {
+      const meta = test.find(x => x.letter === t.letter) || {};
+      const box = el("div", "th" + (meta.winner ? " win" : ""));
+      const im = el("img"); im.src = t.preview; im.alt = "Miniature " + t.letter; im.loading = "lazy"; box.append(im);
+      const cap = el("div", "cap"); cap.append(el("b", null, (f.thumbs.length > 1 ? t.letter + " · " : "") + (meta.lever || t.lever || "").toLowerCase()), document.createTextNode(meta.text || t.text ? "« " + (meta.text || t.text) + " »" : ""));
+      if (meta.winner) cap.append(el("span", "winb", "Gagnante"));
+      if (meta.share != null) cap.append(document.createTextNode(" · " + nf.format(meta.share) + " %"));
+      box.append(cap, fileBtn(f.thumbs.length > 1 ? "Télécharger la miniature " + t.letter : "Télécharger la miniature", t, msg)); g.append(box);
+    });
+    s.append(g, msg);
+    if (v.thumbTestHow) s.append(el("p", "hint", v.thumbTestHow));
+    c.append(s);
+  }
+
+  // 3 titres
+  const titles = v.titles && v.titles.length ? v.titles : [v.title, v.altTitle].filter(Boolean);
+  s = el("div", "step"); s.append(el("span", "label", titles.length > 1 ? "3 · Titres à tester" : "3 · Le titre"));
+  const tl = el("div", "titles"); titles.forEach((t, i) => { const r = el("div", "row"); r.append(el("span", "n", String(i + 1)), el("span", "tx", t), copyBtn(() => t)); tl.append(r); });
+  s.append(tl); if (titles.length > 1) s.append(el("p", "hint", "Mets le titre 1 au moment de publier. Dans « Tester et comparer », tu peux aussi tester les 3 titres."));
+  c.append(s);
+
+  // 4 textes
+  s = el("div", "step"); s.append(el("span", "label", "4 · Textes YouTube"));
+  const block = (lab, txt, cls) => { const r = el("div", "copyrow"); r.append(el("b", null, lab), copyBtn(() => txt)); s.append(r, el("div", "box " + (cls || ""), txt)); };
+  block("Description", v.description || "", "scroll");
+  block("Tags", (v.tags || []).join(", "));
+  if (v.pinnedComment) block("Commentaire à épingler", v.pinnedComment);
+  if (v.checklist && v.checklist.length) { s.append(el("b", null, "Réglages et étapes")); const ul = el("ul", "check"); v.checklist.forEach(x => ul.append(el("li", x.done ? "done" : "", x.label))); s.append(ul); }
+  c.append(s);
+
+  // 5 sous-titres
+  if (f.srt) {
+    s = el("div", "step"); s.append(el("span", "label", "5 · Sous-titres"));
+    const msg = el("div", "msg"); const h = el("p", "hint"); h.append("Le fichier arrive en .txt : renomme-le en ", el("b", null, f.srt.rename), " avant de l'importer dans YouTube (Sous-titres → Importer un fichier → Avec synchronisation).");
+    s.append(h, fileBtn("Télécharger les sous-titres", f.srt, msg), msg); c.append(s);
+  }
+
+  // 6 shorts
+  if (f.shorts && f.shorts.length) {
+    s = el("div", "step"); s.append(el("span", "label", "6 · Les Shorts"));
+    const msg = el("div", "msg");
+    f.shorts.forEach(sh => { const r = el("div", "copyrow"); const info = el("div"); info.append(el("b", null, sh.title), document.createTextNode(" · " + sh.when)); r.append(info, fileBtn("Télécharger", sh, msg)); s.append(r); });
+    s.append(msg, el("p", "hint", "Dans YouTube Studio, mets la vidéo complète en « vidéo associée » de chaque Short."));
+    c.append(s);
+  }
+
+  // 7 stats
+  const st = el("div", "stats");
+  st.append(el("span", "label", (f.shorts && f.shorts.length ? "7" : "6") + " · Mes stats"));
+  st.append(el("p", "hint", "Relève les chiffres dans YouTube Studio (Statistiques de la vidéo) à J+1, J+3, J+7 et J+28. Remplis le formulaire, ou envoie une capture à Claude dans la conversation : il les ajoute avec son analyse."));
+  const form = el("form", "form"); form.noValidate = true;
+  const fld = (id, lab, type = "text", ph = "") => { const w = el("div", "f"); const l = el("label", null, lab); const i = el("input"); i.type = type === "num" ? "text" : type; if (type === "num") i.inputMode = "decimal"; i.id = v.id + "-" + id; l.htmlFor = i.id; i.placeholder = ph; w.append(l, i); form.append(w); return i; };
+  const selW = el("div", "f"); const selL = el("label", null, "Relevé"); const sel = el("select"); sel.id = v.id + "-rel"; selL.htmlFor = sel.id; ["J+1", "J+3", "J+7", "J+28"].forEach(o => { const op = el("option", null, o); op.value = o; sel.append(op); }); selW.append(selL, sel); form.append(selW);
+  const I = { views: fld("views", "Vues", "num"), watchHours: fld("hours", "Heures de visionnage", "num"), subsGained: fld("subs", "Nouveaux abonnés", "num"), impressions: fld("imp", "Impressions", "num"), ctr: fld("ctr", "CTR (%)", "num", "ex. 5,2"), avgViewSec: fld("avd", "Durée moyenne (m:ss)", "text", "ex. 2:45"), avgPercent: fld("pct", "% regardé", "num"), likes: fld("likes", "J'aime", "num"), comments: fld("com", "Commentaires", "num") };
+  const winW = el("div", "f"); const winL = el("label", null, "Miniature gagnante"); const win = el("select"); win.id = v.id + "-win"; winL.htmlFor = win.id; ["", "A", "B", "C"].forEach(o => { const op = el("option", null, o || "Pas encore"); op.value = o; win.append(op); }); winW.append(winL, win); form.append(winW);
+  const remW = el("div", "f wide"); const remL = el("label", null, "Remarques (commentaires marquants, idées)"); const rem = el("textarea"); rem.id = v.id + "-rem"; remL.htmlFor = rem.id; remW.append(remL, rem); form.append(remW);
+  const act = el("div", "actions f wide"); const sb = el("button", "btn main", "Enregistrer"); sb.type = "submit"; const smsg = el("span", "msg"); act.append(sb, smsg); form.append(act);
+  form.onsubmit = async e => {
+    e.preventDefault();
+    if (!db) { smsg.className = "msg err"; smsg.textContent = "Enregistrement indisponible dans cette vue."; return; }
+    const order = { "J+1": 1, "J+3": 3, "J+7": 7, "J+28": 28 }[sel.value];
+    const prev = (stats.find(x => x.label === sel.value) || {});
+    const doc = { ...prev, label: sel.value, order, date: new Date().toISOString(), remarks: rem.value.trim() || prev.remarks || "" };
+    for (const k in I) { const val = k === "avgViewSec" ? parseDur(I[k].value) : parseNum(I[k].value); if (val != null) doc[k] = val; }
+    if (win.value) doc.winner = win.value;
+    sb.disabled = true;
+    try { await db.collection("videos/" + v.id + "/stats").doc(sel.value.replace("+", "")).set(doc); smsg.className = "msg ok"; smsg.textContent = "Relevé " + sel.value + " enregistré."; form.reset(); }
+    catch { smsg.className = "msg err"; smsg.textContent = "Tu n'as pas le droit d'enregistrer ici, ou la connexion a échoué."; }
+    sb.disabled = false;
+  };
+  st.append(form);
+  if (stats.length) {
+    const tw = el("div", "tablewrap"); const tb = el("table");
+    const cols = [["Relevé", x => x.label], ["Date", x => shortDay(x.date)], ["Vues", x => fmtN(x.views)], ["Heures", x => fmtN(x.watchHours)], ["Abonnés", x => fmtN(x.subsGained)], ["Impressions", x => fmtN(x.impressions)], ["CTR", x => fmtP(x.ctr), x => ctrTone(x.ctr)], ["Durée moy.", x => fmtDur(x.avgViewSec)], ["% regardé", x => fmtP(x.avgPercent), x => retTone(x.avgPercent)], ["J'aime", x => fmtN(x.likes)], ["Comm.", x => fmtN(x.comments)], ["Miniature", x => x.winner || "—"]];
+    const hr = el("tr"); cols.forEach(k => hr.append(el("th", null, k[0]))); const th = el("thead"); th.append(hr); tb.append(th);
+    const bd = el("tbody"); stats.forEach(x => { const tr = el("tr"); cols.forEach(k => tr.append(el("td", "num " + (k[2] ? k[2](x) : ""), k[1](x)))); bd.append(tr); }); tb.append(bd);
+    tw.append(tb); st.append(tw);
+    st.append(el("p", "hint", "Repères : CTR entre 4 et 10 % (vert au-dessus de 6 %), % regardé autour de 40 % (vert au-dessus de 45 %)."));
+    stats.filter(x => x.note || x.remarks).slice().reverse().forEach(x => {
+      const n = el("div", "note"); n.append(el("b", null, x.label + " · " + shortDay(x.date)));
+      if (x.note) n.append(el("p", null, "Analyse de Claude : " + x.note));
+      if (x.remarks) n.append(el("p", null, "Tes remarques : " + x.remarks));
+      st.append(n);
+    });
+  } else st.append(el("p", "empty", "Pas encore de stats."));
+  c.append(st);
+  return c;
+}
+
+(async () => {
+  db = await claude.use("db");
+  const host = $("#videos"), cal = $("#cal");
+  if (!db) { host.innerHTML = ""; cal.innerHTML = ""; host.append(el("p", "empty", "Les fiches ne sont pas accessibles ici. Ouvre le kit connecté à ton compte Claude.")); return; }
+  let videos = null; const statsBy = {}, subs = {};
+  const t = setTimeout(() => { if (!videos) host.querySelector(".loading") && (host.querySelector(".loading").textContent = "Les fiches mettent du temps à arriver… vérifie ta connexion."); }, 10000);
+  function render() {
+    if (!videos) return;
+    countdowns.length = 0; host.innerHTML = ""; cal.innerHTML = "";
+    const byDateAsc = videos.slice().sort((a, b) => (a.publishAt || "").localeCompare(b.publishAt || ""));
+    byDateAsc.forEach((v, i) => { const a = el("a"); a.href = "#" + v.id; a.append(el("span", "ep", v.code || "V" + String(i + 1).padStart(2, "0")), el("span", "t", v.title), el("span", "d", v.publishAt ? day(v.publishAt) + " · 18h" : "date à fixer")); cal.append(a); });
+    if (!videos.length) cal.append(el("p", "empty", "Aucune vidéo pour l'instant."));
+    byDateAsc.slice().reverse().forEach(v => host.append(card(v, byDateAsc.indexOf(v), statsBy[v.id] || [])));
+    tick();
+  }
+  db.collection("videos").onSnapshot(snap => {
+    clearTimeout(t); videos = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    videos.forEach(v => { if (subs[v.id]) return; subs[v.id] = db.collection("videos/" + v.id + "/stats").orderBy("order").onSnapshot(s => { statsBy[v.id] = s.docs.map(d => d.data()); render(); }, () => {}); });
+    render();
+  }, () => { clearTimeout(t); host.innerHTML = ""; host.append(el("p", "empty", "Impossible de charger les fiches pour le moment.")); });
+  db.doc("channel/main").onSnapshot(s => {
+    if (!s.exists) return; const c = s.data();
+    const sb = c.subscribers || 0, hr = c.watchHours || 0, vw = c.totalViews || 0;
+    const sg = sb >= 500 ? 1000 : 500, hg = hr >= 3000 ? 4000 : 3000;
+    $("#g-subs").textContent = nf.format(sb); $("#g-subs").append(el("small", null, "/ " + nf.format(sg)));
+    $("#g-hours").textContent = nf.format(hr); $("#g-hours").append(el("small", null, "/ " + nf.format(hg) + " h"));
+    $("#g-views").textContent = nf.format(vw);
+    $("#b-subs").style.width = Math.min(100, sb / sg * 100) + "%"; $("#b-hours").style.width = Math.min(100, hr / hg * 100) + "%"; $("#b-views").style.width = Math.min(100, vw / 1000) + "%";
+  }, () => {});
+})();
+</script>

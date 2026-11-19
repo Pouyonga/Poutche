@@ -1,0 +1,703 @@
+1
+00:00:00,300 --> 00:00:03,320
+Chaque année, les restaurants McDonald's du monde entier
+
+2
+00:00:03,340 --> 00:00:06,680
+vendent pour plus de 139 milliards de dollars.
+
+3
+00:00:06,700 --> 00:00:09,320
+Des burgers, des frites, des milkshakes.
+
+4
+00:00:09,340 --> 00:00:12,040
+Mais McDonald's, l'entreprise, n'en encaisse qu'une
+
+5
+00:00:12,060 --> 00:00:13,160
+petite partie.
+
+6
+00:00:13,180 --> 00:00:14,560
+Moins d'un cinquième.
+
+7
+00:00:14,580 --> 00:00:17,280
+Et pourtant, c'est l'une des entreprises les plus rentables
+
+8
+00:00:17,300 --> 00:00:18,440
+de la planète.
+
+9
+00:00:18,460 --> 00:00:20,520
+Son secret n'est pas dans ton assiette.
+
+10
+00:00:20,540 --> 00:00:21,930
+Il est sous tes pieds.
+
+11
+00:00:21,950 --> 00:00:24,760
+Aujourd'hui, on va voir comment McDonald's gagne vraiment
+
+12
+00:00:24,780 --> 00:00:26,800
+son argent. Et tu vas voir…
+
+13
+00:00:26,820 --> 00:00:28,470
+ce n'est pas avec les burgers.
+
+14
+00:00:29,150 --> 00:00:34,130
+Fin 2025, il y avait 45 356 restaurants McDonald's
+
+15
+00:00:34,150 --> 00:00:35,490
+dans le monde.
+
+16
+00:00:35,510 --> 00:00:39,370
+Sauf que McDonald's n'en gère presque aucun lui-même.
+
+17
+00:00:39,390 --> 00:00:42,730
+Environ 95 % de ces restaurants sont tenus par des
+
+18
+00:00:42,750 --> 00:00:43,930
+franchisés.
+
+19
+00:00:43,950 --> 00:00:46,650
+Des entrepreneurs indépendants, qui paient pour avoir
+
+20
+00:00:46,670 --> 00:00:48,770
+le droit d'utiliser la marque.
+
+21
+00:00:48,790 --> 00:00:49,800
+Résultat :
+
+22
+00:00:49,820 --> 00:00:53,890
+sur les 26,9 milliards de dollars que McDonald's encaisse,
+
+23
+00:00:53,910 --> 00:00:57,330
+la plus grosse partie ne vient pas de la vente de burgers.
+
+24
+00:00:57,350 --> 00:00:59,690
+Elle vient de ce que les franchisés lui versent chaque
+
+25
+00:00:59,710 --> 00:01:03,290
+mois. 16,5 milliards de dollars.
+
+26
+00:01:03,310 --> 00:01:06,490
+Contre 9,7 milliards pour les ventes de ses propres
+
+27
+00:01:06,510 --> 00:01:09,610
+restaurants. Mais qu'est-ce que les franchisés paient,
+
+28
+00:01:09,630 --> 00:01:10,440
+exactement
+
+29
+00:01:10,830 --> 00:01:14,840
+? Pour comprendre, il faut remonter en 1955.
+
+30
+00:01:15,530 --> 00:01:18,630
+Au départ, McDonald's, c'est un seul restaurant en
+
+31
+00:01:18,650 --> 00:01:20,870
+Californie, tenu par deux frères :
+
+32
+00:01:20,890 --> 00:01:23,150
+Richard et Maurice McDonald.
+
+33
+00:01:23,170 --> 00:01:23,990
+Leur idée :
+
+34
+00:01:24,010 --> 00:01:27,190
+servir des burgers très vite, toujours de la même façon,
+
+35
+00:01:27,210 --> 00:01:28,740
+comme à l'usine.
+
+36
+00:01:28,760 --> 00:01:31,030
+Un jour, un vendeur de machines à milkshake,
+
+37
+00:01:31,050 --> 00:01:33,510
+Ray Kroc, découvre leur restaurant.
+
+38
+00:01:33,530 --> 00:01:34,980
+Il est fasciné.
+
+39
+00:01:35,000 --> 00:01:37,670
+Il propose aux deux frères de vendre leur concept partout
+
+40
+00:01:37,690 --> 00:01:39,990
+aux États-Unis, en franchise.
+
+41
+00:01:40,010 --> 00:01:43,480
+En 1955, il ouvre son premier restaurant franchisé,
+
+42
+00:01:43,500 --> 00:01:44,820
+près de Chicago.
+
+43
+00:01:44,840 --> 00:01:46,200
+Mais il y a un problème.
+
+44
+00:01:46,220 --> 00:01:48,790
+Kroc ne touche qu'un tout petit pourcentage des ventes
+
+45
+00:01:48,810 --> 00:01:50,150
+de chaque restaurant :
+
+46
+00:01:50,170 --> 00:01:52,230
+à peine 1,9 %.
+
+47
+00:01:52,250 --> 00:01:55,270
+Et une partie revient encore aux frères McDonald.
+
+48
+00:01:55,290 --> 00:01:56,670
+Il ouvre des restaurants…
+
+49
+00:01:56,690 --> 00:01:59,110
+mais il ne gagne presque pas d'argent.
+
+50
+00:01:59,130 --> 00:02:01,460
+C'est là qu'entre en scène Harry Sonneborn,
+
+51
+00:02:01,480 --> 00:02:02,950
+un ancien financier.
+
+52
+00:02:02,970 --> 00:02:05,080
+Son idée va tout changer.
+
+53
+00:02:05,100 --> 00:02:07,190
+Au lieu de se contenter d'une commission,
+
+54
+00:02:07,210 --> 00:02:10,070
+McDonald's va acheter ou louer les terrains où s'installent
+
+55
+00:02:10,090 --> 00:02:11,160
+les restaurants.
+
+56
+00:02:11,180 --> 00:02:12,950
+Puis les louer aux franchisés.
+
+57
+00:02:12,970 --> 00:02:16,350
+Plus cher. On lui attribue une phrase devenue célèbre :
+
+58
+00:02:16,370 --> 00:02:18,660
+« Nous ne sommes pas vraiment dans la restauration.
+
+59
+00:02:18,680 --> 00:02:20,550
+Nous sommes dans l'immobilier.
+
+60
+00:02:20,570 --> 00:02:23,270
+» Grâce à cet argent des loyers, Kroc devient assez
+
+61
+00:02:23,290 --> 00:02:25,750
+puissant pour racheter les frères McDonald.
+
+62
+00:02:25,770 --> 00:02:30,230
+En 1961, il leur rachète tout, la marque et le concept,
+
+63
+00:02:30,250 --> 00:02:32,660
+pour 2,7 millions de dollars.
+
+64
+00:02:32,680 --> 00:02:34,870
+Les deux frères repartent avec un chèque.
+
+65
+00:02:34,890 --> 00:02:37,380
+Kroc, lui, repart avec un empire…
+
+66
+00:02:37,400 --> 00:02:39,460
+construit sur des terrains.
+
+67
+00:02:40,070 --> 00:02:42,690
+Aujourd'hui, le système est toujours le même.
+
+68
+00:02:42,710 --> 00:02:45,290
+Un franchisé qui ouvre un McDonald's paie deux choses
+
+69
+00:02:45,310 --> 00:02:47,090
+principales à l'entreprise.
+
+70
+00:02:47,110 --> 00:02:48,970
+D'abord, une redevance :
+
+71
+00:02:48,990 --> 00:02:51,650
+un pourcentage de ses ventes, pour utiliser la marque,
+
+72
+00:02:51,670 --> 00:02:53,650
+les recettes et les méthodes.
+
+73
+00:02:53,670 --> 00:02:56,400
+Ensuite, et surtout, un loyer.
+
+74
+00:02:56,420 --> 00:02:57,970
+Parce que dans la plupart des cas,
+
+75
+00:02:57,990 --> 00:03:00,990
+c'est McDonald's qui contrôle le terrain ou le bâtiment.
+
+76
+00:03:01,010 --> 00:03:02,450
+Et ce loyer n'est pas fixe :
+
+77
+00:03:02,470 --> 00:03:05,330
+il est calculé, lui aussi, en pourcentage des ventes,
+
+78
+00:03:05,350 --> 00:03:08,130
+avec un minimum à payer quoi qu'il arrive.
+
+79
+00:03:08,150 --> 00:03:10,850
+Dans les pays où il gère directement ses opérations,
+
+80
+00:03:10,870 --> 00:03:14,430
+McDonald's est propriétaire d'environ 56 % des terrains,
+
+81
+00:03:14,450 --> 00:03:17,410
+et de 80 % des bâtiments de ses restaurants.
+
+82
+00:03:17,430 --> 00:03:19,470
+Le reste, il le loue lui-même…
+
+83
+00:03:19,490 --> 00:03:21,790
+et le sous-loue aux franchisés.
+
+84
+00:03:21,810 --> 00:03:23,810
+D'après les chiffres de son rapport annuel,
+
+85
+00:03:23,830 --> 00:03:26,610
+les loyers rapportent même plus que les redevances.
+
+86
+00:03:26,630 --> 00:03:29,040
+Environ 10 milliards de dollars de loyers,
+
+87
+00:03:29,060 --> 00:03:31,090
+contre 6 milliards de redevances.
+
+88
+00:03:31,110 --> 00:03:33,280
+McDonald's est donc, avant tout…
+
+89
+00:03:33,300 --> 00:03:34,960
+un propriétaire.
+
+90
+00:03:35,570 --> 00:03:38,140
+Maintenant, regarde bien ces deux chiffres.
+
+91
+00:03:38,160 --> 00:03:41,790
+Ils viennent directement du rapport annuel de McDonald's.
+
+92
+00:03:41,810 --> 00:03:45,390
+Les restaurants que McDonald's gère lui-même ont réalisé
+
+93
+00:03:45,410 --> 00:03:49,630
+9,7 milliards de dollars de ventes en 2025.
+
+94
+00:03:49,650 --> 00:03:52,240
+Une fois payés les employés, la nourriture,
+
+95
+00:03:52,260 --> 00:03:53,710
+l'électricité…
+
+96
+00:03:53,730 --> 00:03:57,310
+il en reste 1,4 milliard de marge.
+
+97
+00:03:57,330 --> 00:04:01,550
+Les franchisés, eux, lui ont versé 16,5 milliards.
+
+98
+00:04:01,570 --> 00:04:03,350
+Et là, il en reste…
+
+99
+00:04:03,370 --> 00:04:06,150
+13,9 milliards de marge.
+
+100
+00:04:06,170 --> 00:04:07,910
+10 fois plus.
+
+101
+00:04:07,930 --> 00:04:10,750
+Vendre des burgers soi-même rapporte un peu.
+
+102
+00:04:10,770 --> 00:04:13,390
+Louer des restaurants à ceux qui vendent des burgers
+
+103
+00:04:13,410 --> 00:04:15,900
+rapporte énormément.
+
+104
+00:04:16,590 --> 00:04:17,960
+Pourquoi ça marche aussi bien
+
+105
+00:04:18,350 --> 00:04:20,770
+? Parce que c'est le franchisé qui prend la plupart des
+
+106
+00:04:20,790 --> 00:04:24,010
+risques. C'est lui qui embauche, qui achète les stocks,
+
+107
+00:04:24,030 --> 00:04:26,250
+qui gère le restaurant au quotidien.
+
+108
+00:04:26,270 --> 00:04:29,290
+McDonald's, lui, encaisse un loyer et une redevance
+
+109
+00:04:29,310 --> 00:04:30,710
+sur les ventes.
+
+110
+00:04:30,730 --> 00:04:32,010
+Deuxième avantage :
+
+111
+00:04:32,030 --> 00:04:34,490
+les terrains, eux, prennent souvent de la valeur avec
+
+112
+00:04:34,510 --> 00:04:35,490
+le temps.
+
+113
+00:04:35,510 --> 00:04:37,930
+Pendant que les burgers sont mangés en quelques minutes,
+
+114
+00:04:37,950 --> 00:04:40,410
+l'immobilier, lui, reste.
+
+115
+00:04:40,430 --> 00:04:41,850
+Et troisième avantage :
+
+116
+00:04:41,870 --> 00:04:45,030
+le contrôle. Quand on est le propriétaire des murs,
+
+117
+00:04:45,050 --> 00:04:47,570
+on a un moyen de pression énorme sur celui qui les
+
+118
+00:04:47,590 --> 00:04:48,570
+occupe.
+
+119
+00:04:48,590 --> 00:04:51,170
+Un franchisé qui ne respecte pas les règles de la marque
+
+120
+00:04:51,190 --> 00:04:53,450
+ne risque pas seulement de perdre l'enseigne.
+
+121
+00:04:53,470 --> 00:04:55,930
+Il risque aussi de perdre son emplacement.
+
+122
+00:04:55,950 --> 00:04:58,170
+Le résultat est impressionnant.
+
+123
+00:04:58,190 --> 00:05:01,770
+En 2025, McDonald's a dégagé plus de 12 milliards de
+
+124
+00:05:01,790 --> 00:05:03,850
+dollars de résultat d'exploitation,
+
+125
+00:05:03,870 --> 00:05:06,930
+pour 26,9 milliards de revenus.
+
+126
+00:05:06,950 --> 00:05:09,450
+Presque la moitié de ce qu'il encaisse se transforme
+
+127
+00:05:09,470 --> 00:05:11,510
+en bénéfice d'exploitation.
+
+128
+00:05:11,530 --> 00:05:13,290
+Pour une entreprise de restauration,
+
+129
+00:05:13,310 --> 00:05:14,920
+c'est énorme.
+
+130
+00:05:15,540 --> 00:05:16,850
+Attention quand même :
+
+131
+00:05:16,870 --> 00:05:19,160
+ça ne veut pas dire que les burgers ne comptent pas.
+
+132
+00:05:19,180 --> 00:05:20,400
+Au contraire.
+
+133
+00:05:20,420 --> 00:05:23,680
+Le loyer et la redevance sont calculés en pourcentage
+
+134
+00:05:23,700 --> 00:05:26,720
+des ventes. Donc si les restaurants vendent moins,
+
+135
+00:05:26,740 --> 00:05:28,910
+McDonald's encaisse moins.
+
+136
+00:05:28,930 --> 00:05:31,600
+C'est pour ça que McDonald's dépense autant d'énergie
+
+137
+00:05:31,620 --> 00:05:36,080
+en publicité, en nouveaux menus, en applis et en promotions.
+
+138
+00:05:36,100 --> 00:05:39,790
+Plus les franchisés vendent, plus le propriétaire gagne.
+
+139
+00:05:39,810 --> 00:05:42,560
+Le burger n'est pas le produit qui rapporte le plus.
+
+140
+00:05:42,580 --> 00:05:46,830
+C'est le moteur qui fait tourner toute la machine immobilière.
+
+141
+00:05:47,450 --> 00:05:49,670
+En France, c'est la même logique.
+
+142
+00:05:49,690 --> 00:05:52,790
+Le pays compte plus de 1 600 restaurants McDonald's,
+
+143
+00:05:52,810 --> 00:05:56,270
+et l'immense majorité est tenue par des franchisés.
+
+144
+00:05:56,290 --> 00:05:58,710
+D'après les sites spécialisés dans la franchise,
+
+145
+00:05:58,730 --> 00:06:01,870
+un franchisé français reverse en tout environ 20 %
+
+146
+00:06:01,890 --> 00:06:03,550
+de son chiffre d'affaires :
+
+147
+00:06:03,570 --> 00:06:07,050
+autour de 10 % de loyer, 5 % de redevance,
+
+148
+00:06:07,070 --> 00:06:09,870
+et 4 à 5 % pour la publicité.
+
+149
+00:06:09,890 --> 00:06:12,950
+Sur 100 euros de burgers vendus, une vingtaine d'euros
+
+150
+00:06:12,970 --> 00:06:15,670
+repartent donc vers le système McDonald's.
+
+151
+00:06:15,690 --> 00:06:17,910
+Ces pourcentages varient selon les contrats et les
+
+152
+00:06:17,930 --> 00:06:19,380
+emplacements.
+
+153
+00:06:19,980 --> 00:06:23,160
+Alors, est-ce que McDonald's vend des burgers ?
+
+154
+00:06:23,180 --> 00:06:26,200
+Oui. Mais les burgers sont surtout ce qui fait venir les
+
+155
+00:06:26,220 --> 00:06:29,640
+clients… et ce qui rend chaque emplacement précieux.
+
+156
+00:06:29,660 --> 00:06:32,970
+Le vrai business, c'est le terrain sous le restaurant.
+
+157
+00:06:32,990 --> 00:06:35,830
+Et c'est une leçon qu'on retrouve partout dans le business
+
+158
+00:06:35,850 --> 00:06:38,120
+: ce qu'une entreprise vend n'est pas toujours ce qui
+
+159
+00:06:38,140 --> 00:06:39,800
+la fait gagner de l'argent.
+
+160
+00:06:39,820 --> 00:06:41,320
+L'imprimante pas chère…
+
+161
+00:06:41,340 --> 00:06:43,360
+et les cartouches hors de prix.
+
+162
+00:06:43,380 --> 00:06:44,760
+Le rasoir offert…
+
+163
+00:06:44,780 --> 00:06:47,080
+et les lames qu'on rachète toute sa vie.
+
+164
+00:06:47,100 --> 00:06:49,290
+La console vendue presque sans marge…
+
+165
+00:06:49,310 --> 00:06:51,720
+et les jeux et abonnements derrière.
+
+166
+00:06:51,740 --> 00:06:54,320
+À chaque fois, le produit que tu vois n'est que la
+
+167
+00:06:54,340 --> 00:06:55,400
+porte d'entrée.
+
+168
+00:06:55,420 --> 00:06:57,720
+Le vrai business est ailleurs.
+
+169
+00:06:57,740 --> 00:06:59,750
+La prochaine fois que tu achètes quelque chose,
+
+170
+00:06:59,770 --> 00:07:01,080
+pose-toi la question :
+
+171
+00:07:01,100 --> 00:07:03,560
+sur quoi cette entreprise gagne-t-elle vraiment son
+
+172
+00:07:03,580 --> 00:07:04,150
+argent
+
+173
+00:07:04,780 --> 00:07:07,160
+? Si tu veux comprendre comment les grandes entreprises
+
+174
+00:07:07,180 --> 00:07:09,640
+gagnent vraiment leur argent, abonne-toi.
+
+175
+00:07:09,660 --> 00:07:11,930
+Et si tu as raté la vidéo sur le Black Friday,
+
+176
+00:07:11,950 --> 00:07:13,430
+elle est juste ici.
