@@ -182,7 +182,7 @@ def s_profit(img, t):
         lab(img, x, base + 60, yr, t, t0 - .5, 54, PAPER, INK, 0)
     if t >= Z(2, 54.23): pop_word(img, 1600, 330, "− 39 %", t, Z(2, 55.47), 160, PAPER, RED2, -6)
     if t >= Z(2, 57.03):
-        rrect(img, (0, 0, W, H), 0, NIGHT, eo(prog(t, Z(2, 57.03), .3)) * .97)
+        rrect(img, (0, 0, W, H), 0, NIGHT, eo(prog(t, Z(2, 57.03), .3)))
         lab(img, 960, 440, "SHEIN VEND DE PLUS EN PLUS…", t, Z(2, 57.03), 96, PAPER, None, 0)
         lab(img, 960, 600, "… MAIS GAGNE DE MOINS EN MOINS", t, Z(2, 58.92), 96, NIGHT, SUN, -2)
         mascot(img, 960, 860, t, 200, "surpris")
@@ -311,10 +311,10 @@ def s_value(img, t):
         T(img, X[i], 870 - 40, yr, "anton", 44, INK, "mm", 1)
     if t >= Z(5, 178.55): lab(img, 1560, 230, "− 9 % le 1er jour", t, Z(5, 181.31), 56, PAPER, RED2, 5)
     if t >= Z(5, 182.47):
-        rrect(img, (0, 0, W, H), 0, NIGHT, eo(prog(t, Z(5, 182.47), .3)) * .975)
-        lab(img, 960, 420, "EN 4 ANS, SA VALEUR A ÉTÉ", t, Z(5, 182.5), 84, PAPER, None, 0)
-        pop_word(img, 960, 620, "÷ 4", t, Z(5, 184.79), 260, NIGHT, SUN, -5)
-        mascot(img, 1650, 880, t, 190, "surpris")
+        rrect(img, (0, 0, W, H), 0, NIGHT, eo(prog(t, Z(5, 182.47), .3)) )
+        lab(img, 960, 330, "EN 4 ANS, SA VALEUR A ÉTÉ", t, Z(5, 182.5), 84, PAPER, None, 0)
+        pop_word(img, 960, 640, "DIVISÉE PAR 4", t, Z(5, 184.79), 180, NIGHT, SUN, -4)
+        mascot(img, 1740, 930, t, 170, "surpris")
     else:
         mascot(img, 1750, 940, t, 140, "triste" if t > Z(5, 176) else "neutre")
     src(img, t, Z(5, 166.0), "prospectus de Shein ; CNBC (Bourse de Hong Kong, sept. 2026)")
@@ -371,7 +371,7 @@ def s_law(img, t):
     if t >= Z(6, 241.62): lab(img, 1350, 800, "PUB INTERDITE DÈS 2027", t, Z(6, 243.53), 70, PAPER, RED2, 2)
     if t >= Z(6, 246.21): lab(img, 1350, 930, "même par les influenceurs", t, Z(6, 247.01), 46, INK, PAPER, -2)
     if t >= Z(6, 248.37):
-        rrect(img, (0, 0, W, H), 0, NIGHT, eo(prog(t, Z(6, 248.37), .3)) * .975)
+        rrect(img, (0, 0, W, H), 0, NIGHT, eo(prog(t, Z(6, 248.37), .3)) )
         lab(img, 960, 460, "« PAS CHER, VITE, PARTOUT »", t, Z(6, 249.13), 110, PAPER, None, 0)
         lab(img, 960, 640, "DEVIENT BEAUCOUP PLUS DIFFICILE", t, Z(6, 250.97), 90, NIGHT, CORAL, -2)
         mascot(img, 1650, 880, t, 170, "fache")
